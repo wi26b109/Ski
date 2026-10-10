@@ -1,6 +1,16 @@
 {
   "saison": [
     {
+      "name": "Matias",
+      "punkte": 930,
+      "siege": 8,
+      "podien": 9,
+      "era": "2000er",
+      "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
       "name": "Anna",
       "punkte": 795,
       "siege": 7,
@@ -52,5 +62,76 @@
     }
   ],
   "challenge": [],
-  "zeiten": []
+  "zeiten": [
+    {
+      "name": "Matias",
+      "zeit": 72.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 72.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 72.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 72.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 73.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 73.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 73.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 73.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 73.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    },
+    {
+      "name": "Matias",
+      "zeit": 73.5,
+      "info": "legende, legende, legende, legende",
+      "laenge": 2000.0,
+      "speed": 20.0
+    }
+  ]
 }

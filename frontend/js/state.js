@@ -6,7 +6,7 @@ export const S = {
   cfg: null,
   profil: null,
   name: "",
-  tab: "play",       // play | sammlung | erfolge | listen | klassik
+  tab: "play",       // play | sammlung | erfolge | listen
   fehler: "",
   sim: null,         // {neu: Erfolge} solange die Saison-Wiedergabe laeuft
   ansichten: {},     // name -> render-Funktion

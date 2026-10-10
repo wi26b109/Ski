@@ -68,7 +68,6 @@ def lade_bestenlisten():
         b = {}
     b.setdefault("saison", [])
     b.setdefault("challenge", [])
-    b.setdefault("zeiten", [])
     return b
 
 
@@ -93,9 +92,3 @@ def trage_ein(liste_name, eintrag, sortier_key, absteigend, anzahl, gleich=None)
         _schreiben(SAVE_DIR / "highscores.json", b)
         return b[liste_name]
 
-
-def loesche_zeiten():
-    with _lock:
-        b = lade_bestenlisten()
-        b["zeiten"] = []
-        _schreiben(SAVE_DIR / "highscores.json", b)

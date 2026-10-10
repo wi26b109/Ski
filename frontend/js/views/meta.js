@@ -46,12 +46,9 @@ register("listen", root => {
     inhalt = `<p class="sub">${esc(woche)} · ${esc(S.challenge.modifikator.name)} (${esc(S.challenge.modifikator.beschreibung)})</p>` +
       tabelle(["Platz", "Name", "Punkte", "Siege", "Podien"], liste.map((e, i) =>
         `<tr${ich(e)}><td>${i + 1}</td><td>${esc(e.name)}</td><td>${e.punkte}</td><td>${e.siege}</td><td>${e.podien}</td></tr>`));
-  } else {
-    inhalt = tabelle(["Platz", "Name", "Zeit", "Ausrüstung"], b.zeiten.map((e, i) =>
-      `<tr${ich(e)}><td>${i + 1}</td><td>${esc(e.name)}</td><td>${fmt(e.zeit)} s</td><td>${esc(e.info)}</td></tr>`));
   }
   root.innerHTML = `<h1>Bestenlisten</h1>
-    <div class="tabs">${[["saison", "Saison"], ["challenge", "Wochen-Challenge"], ["zeiten", "Klassik-Bestzeiten"]].map(([id, n]) =>
+    <div class="tabs">${[["saison", "Saison"], ["challenge", "Wochen-Challenge"]].map(([id, n]) =>
       `<button data-act="tab" data-id="${id}" aria-pressed="${id === tab}">${n}</button>`).join("")}</div>
     <section class="card">${inhalt}</section>`;
   bind(root, { tab: d => { S.listenTab = d.id; render(); } });

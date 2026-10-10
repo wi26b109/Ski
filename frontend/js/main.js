@@ -6,9 +6,8 @@ import "./views/draft.js";
 import "./views/sim.js";
 import "./views/done.js";
 import "./views/meta.js";
-import "./views/klassik.js";
 
-const TABS = [["play", "Spielen"], ["sammlung", "Sammlung"], ["erfolge", "Erfolge"], ["listen", "Bestenlisten"], ["klassik", "Klassik"]];
+const TABS = [["play", "Spielen"], ["sammlung", "Sammlung"], ["erfolge", "Erfolge"], ["listen", "Bestenlisten"]];
 
 function navAufbauen() {
   const nav = document.getElementById("nav");
@@ -18,7 +17,7 @@ function navAufbauen() {
     if (!b) return;
     S.tab = b.dataset.tab;
     if (S.tab === "play") S.sim = null;
-    if (S.tab === "listen" || S.tab === "klassik") S.listen = await api.bestenlisten();
+    if (S.tab === "listen") S.listen = await api.bestenlisten();
     render();
   });
 }

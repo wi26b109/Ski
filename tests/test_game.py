@@ -146,16 +146,6 @@ class SaisonTest(unittest.TestCase):
         b, _ = season.fahre_rennen(r2, DATA, p2)
         self.assertEqual(a["zeit"], b["zeit"])
 
-    def test_klassik_ausfall_und_highscore(self):
-        p = neues_profil("K")
-        r, _ = season.klassik_rennen(DATA, p, {"helm": "keiner", "brille": "profi", "ski": "profi", "fitness": "profi"})
-        self.assertEqual(r["status"], "ausfall")
-        self.assertEqual(r["fehlt"], ["Helm"])
-        r, liste = season.klassik_rennen(DATA, p, {"helm": "profi", "brille": "profi", "ski": "profi", "fitness": "profi",
-                                                   "laenge": 2000, "speed": 20})
-        self.assertEqual(r["zeit"], 82.27)
-        self.assertTrue(liste)
-
     def test_slug_verhindert_pfadtricks(self):
         self.assertEqual(storage.slug("../../etc/passwd"), "etc_passwd")
 

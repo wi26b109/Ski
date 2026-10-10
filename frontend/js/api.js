@@ -18,6 +18,4 @@ export const api = {
   reroll: name => anfrage("/api/run/reroll", { name }),
   rennen: name => anfrage("/api/run/race", { name }),
   aufgeben: name => anfrage("/api/run/abandon", { name }),
-  klassik: (name, p) => anfrage("/api/klassik", { name, ...p }),
-  klassikReset: () => anfrage("/api/klassik/reset", {}),
 };

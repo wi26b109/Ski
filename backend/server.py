@@ -61,16 +61,9 @@ def api_abandon(profil, b):
     return _run_antwort(profil)
 
 
-def api_klassik(profil, b):
-    ergebnis, liste = season.klassik_rennen(DATA, profil, b)
-    storage.speichere_profil(profil)
-    return {"ergebnis": ergebnis, "zeiten": liste}
-
-
 POST_ROUTEN = {
     "/api/run/start": api_start, "/api/run/pick": api_pick, "/api/run/reroll": api_reroll,
     "/api/run/race": api_race, "/api/run/abandon": api_abandon,
-    "/api/klassik": api_klassik,
 }
 
 
@@ -111,9 +104,6 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         handler = POST_ROUTEN.get(urlparse(self.path).path)
-        if self.path == "/api/klassik/reset":
-            storage.loesche_zeiten()
-            return self._json({"zeiten": []})
         if not handler:
             return self._json({"fehler": "Unbekannte Route."}, 404)
         try:
