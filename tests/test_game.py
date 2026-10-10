@@ -113,6 +113,24 @@ class SaisonTest(unittest.TestCase):
         self.assertEqual(p["stats"]["saisons"], 1)
         self.assertEqual(p["stats"]["rennen"], 10)
 
+    def test_jeder_platz_nur_einmal(self):
+        for i in range(30):
+            p, run = self.saison(f"U{i}")
+            season.simuliere_saison(run, DATA, p)
+            for r in run["results"]:
+                plaetze = [f["platz"] for f in r["feld"]]
+                self.assertEqual(plaetze, list(range(1, len(plaetze) + 1)))
+                zeiten = [f["zeit"] for f in r["feld"]]
+                self.assertEqual(len(set(zeiten)), len(zeiten))
+                self.assertEqual(next(f["platz"] for f in r["feld"] if f.get("du")), r["platz"])
+
+    def test_gleiche_zeiten_werden_getrennt(self):
+        riv = [{"zeit": 50.0}, {"zeit": 50.0}, {"zeit": 50.01}]
+        engine.zeiten_eindeutig(riv, 50.0)
+        zeiten = sorted(r["zeit"] for r in riv)
+        self.assertEqual(len(set(zeiten + [50.0])), 4)
+        self.assertTrue(all(z > 50.0 for z in zeiten))
+
     def test_simuliere_saison(self):
         p, run = self.saison("Auto")
         season.simuliere_saison(run, DATA, p)

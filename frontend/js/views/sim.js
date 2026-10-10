@@ -2,14 +2,12 @@
 import { S, register, render } from "../state.js";
 import { bind, esc, fmt, plus, MEDAL, toastErfolge } from "../util.js";
 
-const LANE = 32, TOP = 14, W = 900, DAUER = 2.6;
+const LANE = 28, TOP = 14, W = 900, DAUER = 2.6;
 const warte = ms => new Promise(r => setTimeout(r, ms));
 
-/** Zielfoto: Zeitunterschiede werden zur Anschauung vergroessert. Liefert ein Promise. */
+/** Zielfoto aller Starter: Zeitunterschiede werden zur Anschauung vergroessert. Liefert ein Promise. */
 function animiere(canvas, feld, ctl) {
-  const fahrer = feld.slice(0, 4);
-  const ich = feld.find(f => f.du);
-  if (!fahrer.includes(ich)) fahrer.push(ich);
+  const fahrer = feld;  // alle Starter
   const best = feld[0].zeit, AMP = 18;
   const eff = f => best + (f.zeit - best) * AMP;
   const maxEff = Math.max(...fahrer.map(eff));
@@ -63,7 +61,7 @@ register("sim", root => {
     <div class="stats" style="margin:12px 0 16px">
       <div class="stat-box"><b id="s-p">0</b><span>Punkte</span></div><div class="stat-box"><b id="s-w">0</b><span>Siege</span></div>
       <div class="stat-box"><b id="s-pod">0</b><span>Podien</span></div><div class="stat-box"><b id="s-r">0 / ${n}</b><span>Rennen</span></div></div>
-    <section class="card"><div class="cal" id="cal">${cfg.saison.map((k, i) => `<div class="race" data-i="${i}"><span class="pl">${cfg.disziplinen[k.disziplin].icon}</span><b>${i + 1}</b>
+    <section class="card"><div class="cal" id="cal">${cfg.saison.map((k, i) => `<div class="race" data-i="${i}"><span class="pl">${cfg.disziplinen[k.disziplin].icon}</span><small>Rennen ${i + 1}</small>
       <small>${esc(k.ort.replace(/ \(.*/, ""))}</small><small class="pt">&nbsp;</small></div>`).join("")}</div></section>
     <section class="card" id="live"><h2 id="rname">&nbsp;</h2><p class="mute" id="rinfo">&nbsp;</p>
       <canvas aria-label="Animation des Rennens"></canvas>

@@ -23,7 +23,7 @@ Konsolenversion des Klassik-Modus: `python cli.py`. Tests: `python -m unittest d
    - *Cap-Draft*: 1 aus 5 Karten, aber das Team darf höchstens 95 $ kosten.
    - *Wochen-Challenge*: Seed, Epoche und Modifikator hängen an der Kalenderwoche, damit sind Karten und Rennen für alle gleich. Eigene Bestenliste pro Woche.
 2. **Draft**: Athlet, Ski, Helm, Brille, Fitness-Coach. Karten gibt es in vier Stufen (Anfänger, Standard, Profi, Legende). 2 Rerolls pro Draft.
-3. **Saison**: Nach dem letzten Pick läuft die Saison automatisch ab: Du siehst jedes Rennen als Zielfoto-Animation (überspringbar), danach die Auswertung mit aufklappbaren Rennen. 10 Rennen (Slalom, Riesenslalom, Super-G, Abfahrt) gegen 29 Rivalen, die im Lauf der Saison stärker werden. Wetter und Zufallsereignisse sorgen für Varianz.
+3. **Saison**: Nach dem letzten Pick läuft die Saison automatisch ab: Du siehst jedes Rennen als Zielfoto-Animation (überspringbar), danach die Auswertung mit aufklappbaren Rennen. 10 Rennen (Slalom, Riesenslalom, Super-G, Abfahrt) gegen 9 Rivalen, die im Lauf der Saison stärker werden. Wetter und Zufallsereignisse sorgen für Varianz.
 4. **Auswertung**: Weltcup-Punkte (100 für den Sieg), Bonus von 500 für die perfekte Saison, Bestenliste, Ergebnis zum Teilen.
 
 Dazu kommen **Kartensammlung** (jede gedraftete Karte wird freigeschaltet), **14 Erfolge** und Lebenszeit-Statistiken pro Spielername.

@@ -1,0 +1,56 @@
+{
+  "saison": [
+    {
+      "name": "Anna",
+      "punkte": 795,
+      "siege": 7,
+      "podien": 8,
+      "era": "2000er",
+      "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
+      "name": "Matias",
+      "punkte": 608,
+      "siege": 5,
+      "podien": 5,
+      "era": "2000er",
+      "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
+      "name": "Anna",
+      "punkte": 245,
+      "siege": 2,
+      "podien": 2,
+      "era": "2000er",
+      "modus": "cap",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
+      "name": "Matias",
+      "punkte": 18,
+      "siege": 0,
+      "podien": 0,
+      "era": "zufall",
+      "modus": "cap",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
+      "name": "Anna",
+      "punkte": 10,
+      "siege": 0,
+      "podien": 0,
+      "era": "2000er",
+      "modus": "cap",
+      "woche": null,
+      "datum": "2026-10-10"
+    }
+  ],
+  "challenge": [],
+  "zeiten": []
+}

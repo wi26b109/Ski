@@ -38,14 +38,14 @@ register("listen", root => {
   const eraName = id => esc(cfg.eras.find(e => e.id === id)?.name || id);
   let inhalt;
   if (tab === "saison") {
-    inhalt = tabelle(["Platz", "Name", "Punkte", "Siege", "Epoche", "Modus"], b.saison.map((e, i) =>
-      `<tr${ich(e)}><td>${i + 1}</td><td>${esc(e.name)}</td><td>${e.punkte}</td><td>${e.siege}-${cfg.saison.length - e.siege}</td><td>${eraName(e.era)}</td><td>${e.modus === "cap" ? "Cap" : "Normal"}</td></tr>`));
+    inhalt = tabelle(["Platz", "Name", "Punkte", "Siege", "Podien", "Epoche", "Modus", "Datum"], b.saison.map((e, i) =>
+      `<tr${ich(e)}><td>${i + 1}</td><td>${esc(e.name)}</td><td>${e.punkte}</td><td>${e.siege}</td><td>${e.podien}</td><td>${eraName(e.era)}</td><td>${e.modus === "cap" ? "Cap" : "Normal"}</td><td>${esc(e.datum || "")}</td></tr>`));
   } else if (tab === "challenge") {
     const woche = S.challenge.woche;
     const liste = b.challenge.filter(e => e.woche === woche).slice(0, 10);
     inhalt = `<p class="sub">${esc(woche)} · ${esc(S.challenge.modifikator.name)} (${esc(S.challenge.modifikator.beschreibung)})</p>` +
-      tabelle(["Platz", "Name", "Punkte", "Siege"], liste.map((e, i) =>
-        `<tr${ich(e)}><td>${i + 1}</td><td>${esc(e.name)}</td><td>${e.punkte}</td><td>${e.siege}-${cfg.saison.length - e.siege}</td></tr>`));
+      tabelle(["Platz", "Name", "Punkte", "Siege", "Podien"], liste.map((e, i) =>
+        `<tr${ich(e)}><td>${i + 1}</td><td>${esc(e.name)}</td><td>${e.punkte}</td><td>${e.siege}</td><td>${e.podien}</td></tr>`));
   } else {
     inhalt = tabelle(["Platz", "Name", "Zeit", "Ausrüstung"], b.zeiten.map((e, i) =>
       `<tr${ich(e)}><td>${i + 1}</td><td>${esc(e.name)}</td><td>${fmt(e.zeit)} s</td><td>${esc(e.info)}</td></tr>`));

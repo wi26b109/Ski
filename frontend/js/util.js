@@ -7,7 +7,7 @@ export const fmtZeit = s => `${fmt(s)} s`;
 export const plus = d => (d > 0 ? "+" : "") + fmt(d, 2).replace(/,00$/, "").replace(/(,\d)0$/, "$1");
 
 export const SLOT_ICON = { athlet: "⛷️", ski: "🎿", helm: "🪖", brille: "🥽", fitness: "💪" };
-export const MEDAL = p => (p === 1 ? "🥇" : p === 2 ? "🥈" : p === 3 ? "🥉" : String(p));
+export const MEDAL = p => (p === 1 ? "🥇" : p === 2 ? "🥈" : p === 3 ? "🥉" : `${p}.`);
 
 /** Klick-Delegation: handlers[data-act](dataset, button) */
 export function bind(root, handlers) {

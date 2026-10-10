@@ -36,12 +36,12 @@ draft:
 
 # Gegnerfeld
 feld:
-  groesse: 30            # inkl. Spieler
+  groesse: 10            # Starter pro Rennen inkl. Spieler (Rivalen = groesse - 1)
   form_rauschen: 0.012   # Tagesform der Rivalen (Anteil der Grundzeit)
   streuung: 0.055        # Leistungsunterschied zwischen den Rivalen
 
-# Punkte pro Platz (wie im Weltcup), danach 0
-punkte: [100, 80, 60, 50, 45, 40, 36, 32, 29, 26, 24, 22, 20, 18, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+# Punkte pro Platz (Weltcup-Tabelle, gekuerzt auf die Starterzahl)
+punkte: [100, 80, 60, 50, 45, 40, 36, 32, 29, 26]
 perfekte_saison_bonus: 500
 
 # Bestenlisten

@@ -35,14 +35,13 @@ register("done", root => {
     <section class="card"><h2>Saisonverlauf</h2>
       ${run.results.map((r, i) => {
         const k = cfg.saison[i], d = cfg.disziplinen[k.disziplin], w = cfg.wetter.find(x => x.id === r.wetter);
-        const du = r.feld.find(f => f.du);
         return `<details class="rennen"><summary><span class="pl">${MEDAL(r.platz)}</span> <b>${esc(k.name)}</b>
           <small>${d.icon} ${esc(d.name)} · ${w.icon} ${esc(w.name)}</small>
           <span class="rechts">${fmt(r.zeit)} s · ${r.punkte} P</span></summary>
           <p class="mute">Geschwindigkeit ${fmt(r.geschwindigkeit)} m/s, Grundzeit ${fmt(r.grundzeit)} s${r.ereignisse.length ? ", danach:" : "."}</p>
           ${r.ereignisse.length ? `<ul class="ev">${r.ereignisse.map(e => `<li>${esc(e.name)}: ${plus(e.diff)} s</li>`).join("")}</ul>` : ""}
           <div class="wrap"><table><thead><tr><th>Platz</th><th>Fahrer</th><th>Zeit</th><th>Rückstand</th></tr></thead><tbody>
-          ${r.feld.slice(0, 5).concat(du.platz > 5 ? [du] : []).map(f => `<tr class="${f.du ? "me" : ""}"><td>${MEDAL(f.platz)}</td><td>${f.du ? "Du" : esc(f.name)}</td><td>${fmt(f.zeit)} s</td><td>${f.platz === 1 ? "" : "+" + fmt(f.zeit - r.feld[0].zeit)}</td></tr>`).join("")}
+          ${r.feld.map(f => `<tr class="${f.du ? "me" : ""}"><td>${MEDAL(f.platz)}</td><td>${f.du ? "Du" : esc(f.name)}</td><td>${fmt(f.zeit)} s</td><td>${f.platz === 1 ? "" : "+" + fmt(f.zeit - r.feld[0].zeit)}</td></tr>`).join("")}
           </tbody></table></div></details>`;
       }).join("")}</section>`;
 
@@ -51,7 +50,7 @@ register("done", root => {
       try { await navigator.clipboard.writeText(teilen); toast("📋 Ergebnis kopiert"); }
       catch { prompt("Zum Kopieren:", teilen); }
     },
-    listen: () => { S.tab = "listen"; render(); },
+    listen: async () => { S.listen = await api.bestenlisten(); S.tab = "listen"; S.listenTab = S.profil.run.mode === "challenge" ? "challenge" : "saison"; render(); },
     neu: async () => { if (await aktion(() => api.aufgeben(S.name))) render(); },
   });
 });

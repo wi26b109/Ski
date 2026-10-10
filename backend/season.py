@@ -159,6 +159,7 @@ def fahre_rennen(run, data, profil):
     r = engine.berechne_rennen(sportler, strecke, rng, data, True, wetter,
                                run["mods"]["fehler"])
     rivalen = engine.rivalen_zeiten(run["rivalen"], kurs, rng, data, run["mods"]["rivalen"])
+    engine.zeiten_eindeutig(rivalen, r["zeit"])
     platz = 1 + sum(1 for x in rivalen if x["zeit"] < r["zeit"])
     bester_rivale = min(x["zeit"] for x in rivalen)
     abstand = round(bester_rivale - r["zeit"], 2)  # >0: Sieg mit Vorsprung

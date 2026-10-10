@@ -83,6 +83,19 @@ def rivalen_zeiten(rivalen, kurs, rng, data, offset=0.0):
     return zeiten
 
 
+def zeiten_eindeutig(rivalen, spieler_zeit):
+    """Schiebt gleiche Rivalenzeiten um je 0,01 s nach hinten, damit jeder Platz nur einmal vergeben wird.
+    Bei Gleichstand mit dem Spieler gewinnt der Spieler (seine Zeit bleibt unveraendert)."""
+    belegt = {round(spieler_zeit, 2)}
+    for r in sorted(rivalen, key=lambda x: x["zeit"]):
+        z = round(r["zeit"], 2)
+        while z in belegt:
+            z = round(z + 0.01, 2)
+        r["zeit"] = z
+        belegt.add(z)
+    return rivalen
+
+
 def rangliste(ergebnisse):
     """Gueltige Zeiten aufsteigend sortieren, Ausfaelle ans Ende (wie im Original)."""
     gueltig = sorted((e for e in ergebnisse if e["zeit"] is not None), key=lambda e: e["zeit"])
