@@ -1,0 +1,8 @@
+# Zufallsereignisse (Originalwerte). diff = Sekunden auf die Grundzeit (skaliert mit der Disziplin)
+ereignisse:
+  - { id: tor,      name: Tor verpasst,   diff: 3 }
+  - { id: rutscher, name: Ausrutscher,    diff: 2 }
+  - { id: kurve_w,  name: Kurve zu weit,  diff: 1 }
+  - { id: kurve_s,  name: Zu späte Kurve, diff: 2 }
+  - { id: perfekt,  name: Perfekte Linie, diff: -1 }
+  - { id: kein,     name: Kein Fehler,    diff: 0 }

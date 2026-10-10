@@ -1,0 +1,55 @@
+# Globale Spielregeln. Alle Zahlen koennen hier angepasst werden - ein Neustart des Servers genuegt.
+
+# Faktor je Stufe (Originalwerte: anfaenger 0.90 / standard 1.00 / profi 1.05, neu: legende)
+stufen:
+  anfaenger: { name: Anfänger, faktor: 0.90, fehlerchance: 0.30, gewicht: 35, kosten: 8 }
+  standard:  { name: Standard, faktor: 1.00, fehlerchance: 0.20, gewicht: 35, kosten: 14 }
+  profi:     { name: Profi,    faktor: 1.05, fehlerchance: 0.10, gewicht: 25, kosten: 22 }
+  legende:   { name: Legende,  faktor: 1.08, fehlerchance: 0.05, gewicht: 5,  kosten: 32 }
+
+# Reihenfolge der Stufen (fuer Ausruestungs-Upgrades)
+stufen_reihenfolge: [anfaenger, standard, profi, legende]
+
+# Athlet-Faktor (kleiner als Ausruestung, damit die Ausruestung wichtig bleibt)
+athlet_faktoren: { anfaenger: 0.97, standard: 1.00, profi: 1.03, legende: 1.06 }
+
+# Pflichtausruestung: ohne Helm oder Brille -> Ausfall ueber die blaue Markierung
+pflicht_ausruestung: [helm, brille]
+
+# Reihenfolge, in der das Team gedraftet wird
+draft_slots: [athlet, ski, helm, brille, fitness]
+slot_namen:
+  athlet: Athlet
+  ski: Ski
+  helm: Helm
+  brille: Brille
+  fitness: Fitness-Coach
+
+ereignisse_pro_rennen: { min: 3, max: 6 }
+
+# Draft
+draft:
+  optionen_normal: 3
+  optionen_cap: 5
+  rerolls: 2
+  cap: 95            # Gehaltsobergrenze im Cap-Modus
+
+# Gegnerfeld
+feld:
+  groesse: 30            # inkl. Spieler
+  form_rauschen: 0.012   # Tagesform der Rivalen (Anteil der Grundzeit)
+  streuung: 0.055        # Leistungsunterschied zwischen den Rivalen
+
+# Punkte pro Platz (wie im Weltcup), danach 0
+punkte: [100, 80, 60, 50, 45, 40, 36, 32, 29, 26, 24, 22, 20, 18, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+perfekte_saison_bonus: 500
+
+# Muenzen nach dem Rennen
+muenzen:
+  basis: 10
+  sieg: 40
+  podium: 25
+  top10: 12
+
+# Bestenlisten
+highscore_eintraege: 10

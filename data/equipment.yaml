@@ -1,0 +1,58 @@
+# Ausruestungs-Karten. Pro Slot und Epoche sollten mindestens 3 Karten (inkl. einer 'anfaenger'-Karte) existieren.
+# Felder: id (eindeutig), name, era, tier (anfaenger|standard|profi|legende), text (optional), kosten (optional, sonst Stufen-Standard)
+# Die Karten sind frei erfunden - gern durch eigene Ideen ersetzen.
+helm:
+  - { id: helm_80_kunststoff, name: Kunststoff-Schale,   era: 1980er, tier: anfaenger, text: "Sieht gut aus, schützt mäßig." }
+  - { id: helm_80_leder,      name: Leder-Kappe Plus,    era: 1980er, tier: standard }
+  - { id: helm_80_carbon,     name: Carbon-Prototyp,     era: 1980er, tier: profi }
+  - { id: helm_80_neon,       name: Neon-Blitz,          era: 1980er, tier: legende, text: "Der Helm, den man bis ins Tal sieht." }
+  - { id: helm_00_basic,      name: Rennhelm Basic,      era: 2000er, tier: anfaenger }
+  - { id: helm_00_fis,        name: FIS-Helm,            era: 2000er, tier: standard }
+  - { id: helm_00_aero,       name: Aero-Helm,           era: 2000er, tier: profi }
+  - { id: helm_00_titan,      name: Titan-Kuppel,        era: 2000er, tier: legende }
+  - { id: helm_20_einsteiger, name: Einsteiger-Helm,     era: 2020er, tier: anfaenger }
+  - { id: helm_20_airbag,     name: Airbag-Helm,         era: 2020er, tier: standard }
+  - { id: helm_20_wind,       name: Windkanal-Helm,      era: 2020er, tier: profi }
+  - { id: helm_20_nano,       name: Nano-Carbon-Helm,    era: 2020er, tier: legende }
+
+brille:
+  - { id: brille_80_schnee,   name: Schneebrille,        era: 1980er, tier: anfaenger }
+  - { id: brille_80_spiegel,  name: Spiegelbrille,       era: 1980er, tier: standard }
+  - { id: brille_80_fluo,     name: Fluo-Visier,         era: 1980er, tier: profi }
+  - { id: brille_80_panorama, name: Panorama-Maske,      era: 1980er, tier: legende }
+  - { id: brille_00_klar,     name: Klarglas-Brille,     era: 2000er, tier: anfaenger }
+  - { id: brille_00_kontrast, name: Kontrast-Brille,     era: 2000er, tier: standard }
+  - { id: brille_00_pola,     name: Polarisierte Maske,  era: 2000er, tier: profi }
+  - { id: brille_00_adler,    name: Adlerauge,           era: 2000er, tier: legende }
+  - { id: brille_20_basic,    name: Sportbrille,         era: 2020er, tier: anfaenger }
+  - { id: brille_20_foto,     name: Fotochrom-Brille,    era: 2020er, tier: standard }
+  - { id: brille_20_hud,      name: HUD-Brille,          era: 2020er, tier: profi }
+  - { id: brille_20_ar,       name: AR-Rennmaske,        era: 2020er, tier: legende }
+
+ski:
+  - { id: ski_80_holz,        name: Holz-Laminat,        era: 1980er, tier: anfaenger }
+  - { id: ski_80_glas,        name: Glasfaser-Ski,       era: 1980er, tier: standard }
+  - { id: ski_80_race,        name: Racing 207,          era: 1980er, tier: profi }
+  - { id: ski_80_silber,      name: Silberpfeil,         era: 1980er, tier: legende }
+  - { id: ski_00_allround,    name: Allround 170,        era: 2000er, tier: anfaenger }
+  - { id: ski_00_carving,     name: Carving Race,        era: 2000er, tier: standard }
+  - { id: ski_00_cup,         name: Cup-Modell,          era: 2000er, tier: profi }
+  - { id: ski_00_fabrik,      name: Werksski,            era: 2000er, tier: legende }
+  - { id: ski_20_leih,        name: Leihski,             era: 2020er, tier: anfaenger }
+  - { id: ski_20_club,        name: Club-Race,           era: 2020er, tier: standard }
+  - { id: ski_20_pro,         name: World-Cup-Pro,       era: 2020er, tier: profi }
+  - { id: ski_20_graphen,     name: Graphen-Rakete,      era: 2020er, tier: legende }
+
+fitness:
+  - { id: fit_80_jogging,     name: Jogging-Trainer,     era: 1980er, tier: anfaenger }
+  - { id: fit_80_kraft,       name: Kraftkammer-Coach,   era: 1980er, tier: standard }
+  - { id: fit_80_ost,         name: Ostblock-Drill,      era: 1980er, tier: profi }
+  - { id: fit_80_guru,        name: Der Konditions-Guru, era: 1980er, tier: legende }
+  - { id: fit_00_hobby,       name: Hobby-Trainer,       era: 2000er, tier: anfaenger }
+  - { id: fit_00_verband,     name: Verbands-Coach,      era: 2000er, tier: standard }
+  - { id: fit_00_sport,       name: Sportwissenschaftler, era: 2000er, tier: profi }
+  - { id: fit_00_olymp,       name: Olympia-Betreuer,    era: 2000er, tier: legende }
+  - { id: fit_20_app,         name: Fitness-App,         era: 2020er, tier: anfaenger }
+  - { id: fit_20_studio,      name: Studio-Coach,        era: 2020er, tier: standard }
+  - { id: fit_20_daten,       name: Daten-Analyst,       era: 2020er, tier: profi }
+  - { id: fit_20_ki,          name: KI-Performance-Coach, era: 2020er, tier: legende }

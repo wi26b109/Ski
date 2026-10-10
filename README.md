@@ -1,104 +1,83 @@
-[README.md](https://github.com/user-attachments/files/33165716/README.md)
-# Skirennspiel
+# Skirennspiel – Saison 10-0
 
-Ein kleines Skirennspiel: Du wählst Ausrüstung und Fitness, startest das Rennen und bekommst deine Zeit. Die besten Zeiten landen in einer Highscore-Tabelle.
+Ein Skirennspiel mit Draft, Saison und Upgrades. Inspiriert von Draft-Spielen wie *Era Ball* und *82-0*: Du stellst per Kartendraft ein Rennteam zusammen und versuchst, **alle 10 Weltcup-Rennen einer Saison zu gewinnen**.
 
-Das Projekt gibt es in zwei Varianten mit derselben Spiellogik:
-
-| Datei | Variante | Highscore wird gespeichert in |
-|---|---|---|
-| `skirennspiel.py` | Konsole (Python) | `highscores.json` (neben dem Skript) |
-| `Skirennspiel.html` | Browser (HTML/JavaScript) | `localStorage` des Browsers |
+Das ursprüngliche Spiel (Ausrüstung wählen, Rennen fahren, Highscore) gibt es weiterhin als **Klassik-Modus**.
 
 ## Starten
 
-### Python-Version
-
-Voraussetzung: Python 3.8 oder neuer (keine zusätzlichen Pakete nötig).
+Voraussetzung: Python 3.9+ und PyYAML.
 
 ```bash
-python skirennspiel.py
+pip install -r requirements.txt
+python run.py
 ```
 
-Das Programm fragt der Reihe nach:
+Der Server startet auf `http://127.0.0.1:8000/` und öffnet den Browser. Anderer Port: `python run.py 9000`.
+Konsolenversion des Klassik-Modus: `python cli.py`. Tests: `python -m unittest discover tests`.
 
-1. Name
-2. Helm, Brille, Ski, Fitness (jeweils eine der angezeigten Möglichkeiten eintippen)
-3. Länge der Piste in Metern (Standard: 2000)
-4. Basisgeschwindigkeit in m/s (Standard: 20)
-5. Zufallsereignisse ja/nein (`j` oder `n`, Standard: `n`)
+## Spielablauf
 
-Danach werden Zeit und Highscore-Tabelle ausgegeben.
+1. **Modus und Epoche wählen**
+   - *Normaler Draft*: pro Slot 1 aus 3 Karten.
+   - *Cap-Draft*: 1 aus 5 Karten, aber das Team darf höchstens 95 $ kosten.
+   - *Wochen-Challenge*: Seed, Epoche und Modifikator hängen an der Kalenderwoche, damit sind Karten und Rennen für alle gleich. Eigene Bestenliste pro Woche.
+2. **Draft**: Athlet, Ski, Helm, Brille, Fitness-Coach. Karten gibt es in vier Stufen (Anfänger, Standard, Profi, Legende). 2 Rerolls pro Draft.
+3. **Saison**: 10 Rennen (Slalom, Riesenslalom, Super-G, Abfahrt) gegen 29 Rivalen, die im Lauf der Saison stärker werden. Wetter und Zufallsereignisse sorgen für Varianz.
+4. **Shop** zwischen den Rennen: Münzen gibt es für gute Platzierungen. Gekauft werden können Training (Kraftraum, Windkanal), Verbrauchsgüter (Rennwachs, Streckenbesichtigung) und Stufen-Upgrades für Ausrüstung.
+5. **Auswertung**: Weltcup-Punkte (100 für den Sieg), Bonus von 500 für die perfekte Saison, Bestenliste, Ergebnis zum Teilen.
 
-### Browser-Version
+Dazu kommen **Kartensammlung** (jede gedraftete Karte wird freigeschaltet), **14 Erfolge** und Lebenszeit-Statistiken pro Spielername.
 
-`Skirennspiel.html` einfach per Doppelklick im Browser öffnen. Es wird kein Server benötigt. Die Schriftart wird von Google Fonts geladen, ohne Internet greift automatisch eine Systemschrift.
-
-## Spielregeln
-
-### Pflichtausrüstung
-
-Ohne **Helm** oder ohne **Brille** fährt der Fahrer über die blaue Markierung und scheidet aus (**Ausfall**). Ausfälle bekommen keine Zeit und kommen nicht in die Highscore-Tabelle.
-
-### Berechnung der Zeit
+### Rennformel (unverändert aus dem Original)
 
 ```
-Geschwindigkeit = Basisgeschwindigkeit × Helm × Brille × Ski × Fitness
-Grundzeit       = Länge der Piste / Geschwindigkeit
+Geschwindigkeit = Basis × Helm × Brille × Ski × Fitness   (× Athlet × Wetter × Upgrades)
+Grundzeit       = Länge / Geschwindigkeit
 ```
 
-Faktoren der Ausrüstungsstufen:
+Faktoren: Anfänger 0,90 · Standard 1,00 · Profi 1,05 · neu: Legende 1,08. Alles Standard bei 2000 m und 20 m/s ergibt 100,00 s, alles Profi 82,27 s (beides in den Tests geprüft).
 
-| Stufe | Faktor |
-|---|---|
-| Anfänger | 0,90 |
-| Standard | 1,00 |
-| Profi | 1,05 |
+**Pflichtausrüstung:** Ohne Helm oder Brille gibt es einen **Ausfall** über die blaue Markierung. Im Draft kann das nicht passieren, im Klassik-Modus schon (kein Eintrag in der Highscore-Tabelle).
 
-Beispiele bei 2000 m und 20 m/s:
+**Zufallsereignisse:** pro Rennen 3 bis 6 Ereignisse (Tor verpasst +3 s, Ausrutscher +2 s, …, Perfekte Linie −1 s). Ob ein Fehler eintritt, hängt von der Fitness-Stufe ab (30 / 20 / 10 / 5 %), dazu kommen Athlet, Wetter, Epoche und Training. Die Zeitstrafen skalieren mit der Disziplin (Slalom kleiner, Abfahrt größer).
 
-- Alles Standard: 20 m/s, Zeit **100,00 s**
-- Alles Profi: 24,31 m/s, Zeit **82,27 s**
+## Projektstruktur
 
-### Zufallsereignisse (optional)
+```
+data/        Spieldaten in YAML (hier balancieren und erweitern, kein Code nötig)
+  game.yaml          Stufen, Faktoren, Draft-Regeln, Punkte, Münzen
+  eras.yaml          Epochen mit Modifikatoren
+  athletes.yaml      Athleten-Karten
+  equipment.yaml     Ski-, Helm-, Brillen- und Coach-Karten
+  courses.yaml       Disziplinen und der 10-Rennen-Kalender inkl. Rivalenstärke
+  weather.yaml  events.yaml  upgrades.yaml  challenges.yaml  achievements.yaml  rivals.yaml
+backend/     Python (nur PyYAML als Abhängigkeit)
+  data_loader.py     lädt und prüft die YAML-Dateien
+  engine.py          Rennformel, Ereignisse, Rivalen, Ranglisten
+  season.py          Spielablauf: Draft, Rennen, Shop, Klassik, Challenge
+  achievements.py    Erfolge
+  storage.py         JSON-Speicherstände (saves/)
+  server.py          HTTP-Server und JSON-API
+frontend/    HTML/CSS/JavaScript ohne Build-Schritt
+  js/views/          eine Datei pro Ansicht (home, draft, season, race, done, meta, klassik)
+tests/       Unit-Tests
+saves/       Profile und Bestenlisten (werden automatisch angelegt)
+run.py       Starter       cli.py   Konsolen-Klassik
+```
 
-Wenn aktiviert, passieren pro Rennen zufällig 3 bis 6 Ereignisse, die Sekunden auf die Grundzeit addieren oder abziehen:
+Die Spiellogik läuft komplett im Backend; das Frontend zeigt nur an. So lässt sich nicht im Browser schummeln, und dasselbe Seed ergibt immer dieselben Angebote und Rennen.
 
-| Ereignis | Zeitänderung |
-|---|---|
-| Tor verpasst | +3 s |
-| Ausrutscher | +2 s |
-| Zu späte Kurve | +2 s |
-| Kurve zu weit | +1 s |
-| Perfekte Linie | −1 s |
-| Kein Fehler | 0 s |
+### Eigene Inhalte hinzufügen
 
-Ob ein Fehler (Pluszeit) tatsächlich eintritt, hängt von der **Fitness** ab. Ein Bonus (Minuszeit) tritt mit der Gegenwahrscheinlichkeit ein.
+- Neue Karte: Eintrag in `athletes.yaml` bzw. `equipment.yaml` (ID eindeutig, Epoche und Stufe angeben).
+- Neue Strecke: Eintrag in `courses.yaml`. Die Saisonlänge ergibt sich aus der Anzahl der Einträge.
+- Balance: `rivalen` in `courses.yaml` und die Faktoren in `game.yaml`. Beim Start wird alles geprüft, Fehler werden mit Dateinamen gemeldet.
 
-| Fitness | Fehlerchance |
-|---|---|
-| Anfänger | 30 % |
-| Standard | 20 % |
-| Profi | 10 % |
-
-### Highscore
-
-- Es werden die **10 besten Zeiten** gespeichert (aufsteigend sortiert, schnellste Zeit zuerst).
-- Python: Datei `highscores.json` wird automatisch angelegt.
-- Browser: Mit dem Button **„Highscores löschen“** wird die Tabelle zurückgesetzt. In der Python-Version genügt es, `highscores.json` zu löschen.
-
-## Aufbau des Codes (Python)
-
-| Funktion | Aufgabe |
-|---|---|
-| `berechne_rennen()` | Prüft Ausrüstung, berechnet Zeit und würfelt optional Ereignisse |
-| `rangliste()` | Sortiert Ergebnisse nach Zeit, Ausfälle kommen ans Ende |
-| `lade_highscores()` / `speichere_highscore()` | Lesen und Schreiben der Highscore-Datei |
-| `frage()` | Eingabe mit Prüfung auf gültige Antworten |
-
-Die Werte (Faktoren, Fehlerchancen, Ereignisse) stehen als Tabellen am Anfang der Datei und lassen sich dort leicht anpassen. In der HTML-Datei stehen sie am Anfang des `<script>`-Blocks.
+Die Namen der Athleten und Rivalen sind frei erfunden.
 
 ## Hinweise
 
-- Die Highscores der beiden Varianten sind voneinander getrennt.
-- Im Browser sind die Highscores an Browser und Gerät gebunden. Wird der Browserspeicher geleert, sind sie weg.
+- Spielstände liegen in `saves/` (ein Profil pro Spielername, kein Passwort – gedacht für lokales Spielen).
+- Die Highscores des alten Spiels (`highscores.json` im Skriptordner bzw. `localStorage`) werden nicht übernommen. Die alten Dateien `skirennspiel (1).py` und `Skirennspiel (1).html` bleiben unverändert im Ordner.
+- Die Schriftart wird von Google Fonts geladen; ohne Internet greift eine Systemschrift.

@@ -1,0 +1,22 @@
+# Wochen-Challenge: gleicher Seed fuer alle, Epoche und Modifikator werden reihum nach Kalenderwoche gewaehlt.
+# Spielmodus ist immer Cap-Draft.
+modifikatoren:
+  - id: eiswoche
+    name: Eiswoche
+    beschreibung: Alle Rennen finden auf Eisplatten statt.
+    wetter: eis
+  - id: spar
+    name: Sparwoche
+    beschreibung: Das Gehaltslimit sinkt auf 80.
+    cap: 80
+  - id: turbo
+    name: Turbo-Rivalen
+    beschreibung: Alle Rivalen sind um 3 % schneller, dafür gibt es doppelt Münzen.
+    rivalen: 0.03
+    muenzen: 2.0
+  - id: nebel
+    name: Nebelwoche
+    beschreibung: Alle Rennen im Nebel, dafür sind die Rivalen etwas langsamer.
+    wetter: nebel
+    rivalen: -0.01
+epochen: [2000er, 2020er, 1980er, zufall]

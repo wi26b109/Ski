@@ -1,0 +1,27 @@
+# Epochen. 'modifikator' wirkt auf die ganze Saison.
+# fehler: addiert sich zur Fehlerchance, rivalen: addiert sich auf den Rivalen-Speedfaktor, muenzen: Multiplikator
+eras:
+  - id: 1980er
+    name: Die 80er
+    jahre: "1980 – 1989"
+    beschreibung: Knallbunte Anzüge, Stahlkanten und wenig Sicherheit. Mehr Fehler, dafür schwächere Rivalen.
+    farbe: "#e0439f"
+    modifikator: { fehler: 0.04, rivalen: -0.01, muenzen: 1.0 }
+  - id: 2000er
+    name: Die 2000er
+    jahre: "2000 – 2009"
+    beschreibung: Carving-Ski revolutionieren den Sport. Ausgeglichene Bedingungen.
+    farbe: "#1f6fe0"
+    modifikator: { fehler: 0.0, rivalen: 0.0, muenzen: 1.0 }
+  - id: 2020er
+    name: Die 2020er
+    jahre: "2020 – heute"
+    beschreibung: Hightech, Daten und Windkanal. Stärkste Rivalen der Geschichte.
+    farbe: "#1d8a4e"
+    modifikator: { fehler: -0.02, rivalen: 0.02, muenzen: 1.0 }
+  - id: zufall
+    name: Zufalls-Epoche
+    jahre: "alle Zeiten"
+    beschreibung: Karten aus allen Epochen gemischt. Dafür gibt es 25 % mehr Münzen.
+    farbe: "#8a5cf6"
+    modifikator: { fehler: 0.0, rivalen: 0.0, muenzen: 1.25 }

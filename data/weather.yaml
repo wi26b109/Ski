@@ -1,0 +1,7 @@
+# Wetter pro Rennen. speed: Multiplikator auf die Geschwindigkeit, fehler: Zuschlag auf die Fehlerchance
+wetter:
+  - { id: sonne,     name: Sonnig,      icon: "☀️", speed: 1.00, fehler: 0.00, gewicht: 40 }
+  - { id: neuschnee, name: Neuschnee,   icon: "❄️", speed: 0.98, fehler: 0.02, gewicht: 20 }
+  - { id: eis,       name: Eisplatte,   icon: "🧊", speed: 1.01, fehler: 0.08, gewicht: 20 }
+  - { id: nebel,     name: Nebel,       icon: "🌫️", speed: 0.99, fehler: 0.05, gewicht: 12 }
+  - { id: sturm,     name: Schneesturm, icon: "🌨️", speed: 0.96, fehler: 0.04, gewicht: 8 }

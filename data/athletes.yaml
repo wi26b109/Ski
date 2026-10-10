@@ -1,0 +1,24 @@
+# Athleten-Karten (frei erfundene Personen).
+# profil: Multiplikator je Disziplin, fehler_bonus: senkt die Fehlerchance (z.B. 0.03 = 3 Prozentpunkte)
+athleten:
+  # --- 80er ---
+  - { id: ath_80_hansi,   name: Hansi Berghofer,     nation: AUT, era: 1980er, tier: anfaenger, fehler_bonus: 0.00, profil: { slalom: 1.00, riesenslalom: 1.00, supers: 1.00, abfahrt: 1.01 }, text: "Gemütlicher Tourenfahrer mit Rennlizenz." }
+  - { id: ath_80_luca,    name: Luca Ferretti,       nation: ITA, era: 1980er, tier: standard,  fehler_bonus: 0.01, profil: { slalom: 1.02, riesenslalom: 1.01, supers: 0.99, abfahrt: 0.98 } }
+  - { id: ath_80_erik,    name: Erik Lindqvist,      nation: SWE, era: 1980er, tier: standard,  fehler_bonus: 0.02, profil: { slalom: 1.03, riesenslalom: 1.01, supers: 0.98, abfahrt: 0.97 }, text: "Slalomspezialist mit ruhiger Hand." }
+  - { id: ath_80_monika,  name: Monika Steinegger,   nation: SUI, era: 1980er, tier: profi,     fehler_bonus: 0.02, profil: { slalom: 0.99, riesenslalom: 1.01, supers: 1.02, abfahrt: 1.03 } }
+  - { id: ath_80_franz,   name: Franz „Blitz“ Huber, nation: AUT, era: 1980er, tier: profi,    fehler_bonus: 0.00, profil: { slalom: 0.97, riesenslalom: 1.00, supers: 1.03, abfahrt: 1.05 }, text: "Fährt immer am Limit." }
+  - { id: ath_80_yuki,    name: Yuki Tanabe,         nation: JPN, era: 1980er, tier: legende,   fehler_bonus: 0.03, profil: { slalom: 1.03, riesenslalom: 1.03, supers: 1.02, abfahrt: 1.00 }, text: "Die Legende der Technikfahrer." }
+  # --- 2000er ---
+  - { id: ath_00_tim,     name: Tim Wagner,          nation: GER, era: 2000er, tier: anfaenger, fehler_bonus: 0.01, profil: { slalom: 1.01, riesenslalom: 1.00, supers: 1.00, abfahrt: 0.99 } }
+  - { id: ath_00_sofia,   name: Sofia Marchetti,     nation: ITA, era: 2000er, tier: standard,  fehler_bonus: 0.01, profil: { slalom: 1.01, riesenslalom: 1.02, supers: 1.00, abfahrt: 0.99 } }
+  - { id: ath_00_anton,   name: Anton Kovac,         nation: SLO, era: 2000er, tier: standard,  fehler_bonus: 0.00, profil: { slalom: 0.99, riesenslalom: 1.00, supers: 1.02, abfahrt: 1.03 } }
+  - { id: ath_00_lena,    name: Lena Aichinger,      nation: AUT, era: 2000er, tier: profi,     fehler_bonus: 0.03, profil: { slalom: 1.02, riesenslalom: 1.03, supers: 1.00, abfahrt: 0.98 }, text: "Technik-Königin mit Nerven aus Stahl." }
+  - { id: ath_00_pierre,  name: Pierre Delacroix,    nation: FRA, era: 2000er, tier: profi,     fehler_bonus: 0.01, profil: { slalom: 0.98, riesenslalom: 1.00, supers: 1.03, abfahrt: 1.04 } }
+  - { id: ath_00_maxim,   name: Maximilian „Der Hammer“ Gruber, nation: AUT, era: 2000er, tier: legende, fehler_bonus: 0.02, profil: { slalom: 1.02, riesenslalom: 1.03, supers: 1.03, abfahrt: 1.03 }, text: "Gewinnt, wann immer er will." }
+  # --- 2020er ---
+  - { id: ath_20_noah,    name: Noah Brunner,        nation: SUI, era: 2020er, tier: anfaenger, fehler_bonus: 0.02, profil: { slalom: 1.01, riesenslalom: 1.01, supers: 0.99, abfahrt: 0.98 }, text: "Talent aus dem Nachwuchskader." }
+  - { id: ath_20_emma,    name: Emma Lindholm,       nation: NOR, era: 2020er, tier: standard,  fehler_bonus: 0.01, profil: { slalom: 1.02, riesenslalom: 1.01, supers: 1.00, abfahrt: 0.99 } }
+  - { id: ath_20_marco,   name: Marco Bellini,       nation: ITA, era: 2020er, tier: standard,  fehler_bonus: 0.01, profil: { slalom: 0.98, riesenslalom: 1.00, supers: 1.02, abfahrt: 1.03 } }
+  - { id: ath_20_clara,   name: Clara Hofer,         nation: AUT, era: 2020er, tier: profi,     fehler_bonus: 0.02, profil: { slalom: 1.03, riesenslalom: 1.03, supers: 1.00, abfahrt: 0.98 } }
+  - { id: ath_20_jonas,   name: Jonas Reiter,        nation: GER, era: 2020er, tier: profi,     fehler_bonus: 0.02, profil: { slalom: 0.99, riesenslalom: 1.01, supers: 1.03, abfahrt: 1.03 } }
+  - { id: ath_20_aria,    name: Aria Novak,          nation: SLO, era: 2020er, tier: legende,   fehler_bonus: 0.03, profil: { slalom: 1.03, riesenslalom: 1.03, supers: 1.03, abfahrt: 1.02 }, text: "Die Allrounderin des Jahrzehnts." }

@@ -1,0 +1,16 @@
+# metrik: l_* = Lebenszeit-Statistik, s_* = aktuelle Saison. Erfuellt, wenn Wert >= ziel.
+erfolge:
+  - { id: erster_sieg,   name: Erster Sieg,        icon: "🥇", beschreibung: "Gewinne dein erstes Rennen.",               metrik: l_siege,         ziel: 1 }
+  - { id: zehn_siege,    name: Seriensieger,       icon: "🏆", beschreibung: "Gewinne insgesamt 10 Rennen.",              metrik: l_siege,         ziel: 10 }
+  - { id: erstes_podium, name: Aufs Podest,        icon: "🥉", beschreibung: "Erreiche ein Podium.",                      metrik: l_podien,        ziel: 1 }
+  - { id: serie3,        name: Hattrick,           icon: "🔥", beschreibung: "Gewinne 3 Rennen in Folge.",                metrik: s_serie,         ziel: 3 }
+  - { id: serie6,        name: Unaufhaltsam,       icon: "⚡", beschreibung: "Gewinne 6 Rennen in Folge.",                metrik: s_serie,         ziel: 6 }
+  - { id: saison_fertig, name: Saisonfinale,       icon: "🏁", beschreibung: "Beende eine komplette Saison.",             metrik: l_saisons,       ziel: 1 }
+  - { id: perfekt,       name: 10-0!,              icon: "👑", beschreibung: "Gewinne alle Rennen einer Saison.",         metrik: l_perfekt,       ziel: 1 }
+  - { id: punkte800,     name: Gesamtweltcup,      icon: "⭐", beschreibung: "Erreiche 800 Punkte in einer Saison.",      metrik: s_punkte,        ziel: 800 }
+  - { id: legenden3,     name: Legendenteam,       icon: "💎", beschreibung: "Habe 3 Legenden im Team.",                  metrik: s_legenden,      ziel: 3 }
+  - { id: sammler10,     name: Sammler,            icon: "🃏", beschreibung: "Sammle 10 verschiedene Karten.",            metrik: l_karten,        ziel: 10 }
+  - { id: sammler30,     name: Kartenmeister,      icon: "📚", beschreibung: "Sammle 30 verschiedene Karten.",            metrik: l_karten,        ziel: 30 }
+  - { id: challenge,     name: Wochenkämpfer,      icon: "📅", beschreibung: "Beende eine Wochen-Challenge.",             metrik: l_challenges,    ziel: 1 }
+  - { id: abstand,       name: Haushoch überlegen, icon: "🚀", beschreibung: "Gewinne ein Rennen mit über 3 s Vorsprung.", metrik: l_max_vorsprung, ziel: 3 }
+  - { id: foto,          name: Fotofinish,         icon: "📸", beschreibung: "Gewinne mit weniger als 0,1 s Vorsprung.",  metrik: l_foto,          ziel: 1 }
