@@ -1,0 +1,955 @@
+{
+  "name": "Spieler",
+  "stats": {
+    "rennen": 10,
+    "siege": 2,
+    "podien": 3,
+    "saisons": 1,
+    "perfekt": 0,
+    "challenges": 0,
+    "max_vorsprung": 4.08,
+    "foto": 0,
+    "beste_punkte": 471
+  },
+  "erfolge": [
+    "erster_sieg",
+    "erstes_podium",
+    "abstand",
+    "saison_fertig"
+  ],
+  "karten": [
+    "ath_00_lena",
+    "ski_00_cup",
+    "helm_00_fis",
+    "brille_00_kontrast",
+    "fit_00_sport"
+  ],
+  "run": {
+    "id": "e9b1ef56",
+    "mode": "cap",
+    "era": "2000er",
+    "seed": "174d1448702f",
+    "woche": null,
+    "status": "done",
+    "slot_index": 5,
+    "offers": [],
+    "rerolls": 2,
+    "reroll_zaehler": 5,
+    "cap": 95,
+    "budget": 1,
+    "team": {
+      "athlet": {
+        "id": "ath_00_lena",
+        "tier": "profi"
+      },
+      "ski": {
+        "id": "ski_00_cup",
+        "tier": "profi"
+      },
+      "helm": {
+        "id": "helm_00_fis",
+        "tier": "standard"
+      },
+      "brille": {
+        "id": "brille_00_kontrast",
+        "tier": "standard"
+      },
+      "fitness": {
+        "id": "fit_00_sport",
+        "tier": "profi"
+      }
+    },
+    "race_index": 10,
+    "results": [
+      {
+        "kurs": "levi",
+        "wetter": "neuschnee",
+        "zeit": 44.05,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 13.62,
+        "grundzeit": 44.05,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": 1.53,
+        "feld": [
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 44.05,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 45.58,
+            "platz": 2
+          },
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 46.28,
+            "platz": 3
+          },
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 46.29,
+            "platz": 4
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 46.71,
+            "platz": 5
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 46.83,
+            "platz": 6
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 47.3,
+            "platz": 7
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 47.64,
+            "platz": 8
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 48.4,
+            "platz": 9
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 49.03,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "soelden",
+        "wetter": "eis",
+        "zeit": 57.4,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 18.9,
+        "grundzeit": 58.2,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          }
+        ],
+        "abstand": 4.08,
+        "feld": [
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 57.4,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 61.48,
+            "platz": 2
+          },
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 62.12,
+            "platz": 3
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 62.44,
+            "platz": 4
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 62.56,
+            "platz": 5
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 62.85,
+            "platz": 6
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 63.45,
+            "platz": 7
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 64.26,
+            "platz": 8
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 64.29,
+            "platz": 9
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 66.91,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "lake_louise",
+        "wetter": "sonne",
+        "zeit": 93.07,
+        "platz": 5,
+        "punkte": 45,
+        "geschwindigkeit": 31.16,
+        "grundzeit": 93.07,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -2.29,
+        "feld": [
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 90.78,
+            "platz": 1
+          },
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 91.31,
+            "platz": 2
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 92.33,
+            "platz": 3
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 92.94,
+            "platz": 4
+          },
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 93.07,
+            "du": true,
+            "platz": 5
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 93.39,
+            "platz": 6
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 93.42,
+            "platz": 7
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 94.01,
+            "platz": 8
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 94.52,
+            "platz": 9
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 95.09,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "val_gardena",
+        "wetter": "sonne",
+        "zeit": 69.72,
+        "platz": 7,
+        "punkte": 36,
+        "geschwindigkeit": 27.25,
+        "grundzeit": 69.72,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -1.8,
+        "feld": [
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 67.92,
+            "platz": 1
+          },
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 68.01,
+            "platz": 2
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 68.31,
+            "platz": 3
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 68.34,
+            "platz": 4
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 69.18,
+            "platz": 5
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 69.61,
+            "platz": 6
+          },
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 69.72,
+            "du": true,
+            "platz": 7
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 69.97,
+            "platz": 8
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 70.61,
+            "platz": 9
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 71.79,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "adelboden",
+        "wetter": "eis",
+        "zeit": 63.49,
+        "platz": 3,
+        "punkte": 60,
+        "geschwindigkeit": 18.9,
+        "grundzeit": 63.49,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -0.74,
+        "feld": [
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 62.75,
+            "platz": 1
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 63.23,
+            "platz": 2
+          },
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 63.49,
+            "du": true,
+            "platz": 3
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 63.94,
+            "platz": 4
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 64.23,
+            "platz": 5
+          },
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 64.27,
+            "platz": 6
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 64.84,
+            "platz": 7
+          },
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 64.85,
+            "platz": 8
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 64.94,
+            "platz": 9
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 67.96,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "wengen",
+        "wetter": "nebel",
+        "zeit": 112.26,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 35.26,
+        "grundzeit": 113.46,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.2
+          }
+        ],
+        "abstand": -10.82,
+        "feld": [
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 101.44,
+            "platz": 1
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 101.68,
+            "platz": 2
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 103.66,
+            "platz": 3
+          },
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 104.23,
+            "platz": 4
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 105.52,
+            "platz": 5
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 105.53,
+            "platz": 6
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 106.2,
+            "platz": 7
+          },
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 106.25,
+            "platz": 8
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 109.18,
+            "platz": 9
+          },
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 112.26,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "kitzbuehel",
+        "wetter": "sonne",
+        "zeit": 101.24,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 33.39,
+        "grundzeit": 98.84,
+        "ereignisse": [
+          {
+            "name": "Zu späte Kurve",
+            "diff": 2.4
+          }
+        ],
+        "abstand": -13.15,
+        "feld": [
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 88.09,
+            "platz": 1
+          },
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 88.1,
+            "platz": 2
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 89.27,
+            "platz": 3
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 89.7,
+            "platz": 4
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 89.92,
+            "platz": 5
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 90.07,
+            "platz": 6
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 90.56,
+            "platz": 7
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 92.25,
+            "platz": 8
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 92.94,
+            "platz": 9
+          },
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 101.24,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "schladming",
+        "wetter": "sonne",
+        "zeit": 46.16,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 13.9,
+        "grundzeit": 46.76,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.6
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -3.73,
+        "feld": [
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 42.43,
+            "platz": 1
+          },
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 42.78,
+            "platz": 2
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 42.83,
+            "platz": 3
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 43.22,
+            "platz": 4
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 43.71,
+            "platz": 5
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 44.2,
+            "platz": 6
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 44.33,
+            "platz": 7
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 44.48,
+            "platz": 8
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 45.01,
+            "platz": 9
+          },
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 46.16,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "kvitfjell",
+        "wetter": "eis",
+        "zeit": 67.75,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 28.67,
+        "grundzeit": 69.75,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.0
+          }
+        ],
+        "abstand": -6.77,
+        "feld": [
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 60.98,
+            "platz": 1
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 61.47,
+            "platz": 2
+          },
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 62.12,
+            "platz": 3
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 62.18,
+            "platz": 4
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 63.79,
+            "platz": 5
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 64.43,
+            "platz": 6
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 64.63,
+            "platz": 7
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 64.67,
+            "platz": 8
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 65.1,
+            "platz": 9
+          },
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 67.75,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "finale",
+        "wetter": "eis",
+        "zeit": 63.93,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 20.08,
+        "grundzeit": 64.73,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          }
+        ],
+        "abstand": -7.33,
+        "feld": [
+          {
+            "name": "Bea Hirsch",
+            "nation": "CRO",
+            "zeit": 56.6,
+            "platz": 1
+          },
+          {
+            "name": "Dana Walcher",
+            "nation": "CAN",
+            "zeit": 57.52,
+            "platz": 2
+          },
+          {
+            "name": "Ida Vonn-Berg",
+            "nation": "FRA",
+            "zeit": 58.12,
+            "platz": 3
+          },
+          {
+            "name": "Xaver Rossi",
+            "nation": "ITA",
+            "zeit": 58.53,
+            "platz": 4
+          },
+          {
+            "name": "Alex Gasser",
+            "nation": "ITA",
+            "zeit": 59.61,
+            "platz": 5
+          },
+          {
+            "name": "Ivo Novak",
+            "nation": "FRA",
+            "zeit": 59.75,
+            "platz": 6
+          },
+          {
+            "name": "Greta Hirsch",
+            "nation": "USA",
+            "zeit": 59.94,
+            "platz": 7
+          },
+          {
+            "name": "Anna Castelli",
+            "nation": "SWE",
+            "zeit": 60.02,
+            "platz": 8
+          },
+          {
+            "name": "Hanna Dreyer",
+            "nation": "NOR",
+            "zeit": 62.11,
+            "platz": 9
+          },
+          {
+            "name": "Spieler",
+            "nation": null,
+            "zeit": 63.93,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      }
+    ],
+    "mods": {
+      "fehler": 0.0,
+      "rivalen": 0.0,
+      "wetter": null
+    },
+    "mod_name": null,
+    "rivalen": [
+      {
+        "name": "Xaver Rossi",
+        "nation": "ITA",
+        "skill": 0.462
+      },
+      {
+        "name": "Dana Walcher",
+        "nation": "CAN",
+        "skill": 0.633
+      },
+      {
+        "name": "Ivo Novak",
+        "nation": "FRA",
+        "skill": -0.45
+      },
+      {
+        "name": "Anna Castelli",
+        "nation": "SWE",
+        "skill": 0.002
+      },
+      {
+        "name": "Ida Vonn-Berg",
+        "nation": "FRA",
+        "skill": 0.134
+      },
+      {
+        "name": "Alex Gasser",
+        "nation": "ITA",
+        "skill": -0.435
+      },
+      {
+        "name": "Hanna Dreyer",
+        "nation": "NOR",
+        "skill": -0.869
+      },
+      {
+        "name": "Bea Hirsch",
+        "nation": "CRO",
+        "skill": 0.757
+      },
+      {
+        "name": "Greta Hirsch",
+        "nation": "USA",
+        "skill": -1.671
+      }
+    ],
+    "punkte": 471,
+    "siege": 2,
+    "podien": 3,
+    "serie": 0,
+    "beste_serie": 2,
+    "bonus": 0
+  }
+}

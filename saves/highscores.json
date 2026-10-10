@@ -11,6 +11,16 @@
       "datum": "2026-10-10"
     },
     {
+      "name": "Matias",
+      "punkte": 860,
+      "siege": 6,
+      "podien": 9,
+      "era": "2000er",
+      "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
       "name": "Anna",
       "punkte": 795,
       "siege": 7,
@@ -27,6 +37,16 @@
       "podien": 5,
       "era": "2000er",
       "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
+      "name": "Spieler",
+      "punkte": 471,
+      "siege": 2,
+      "podien": 3,
+      "era": "2000er",
+      "modus": "cap",
       "woche": null,
       "datum": "2026-10-10"
     },

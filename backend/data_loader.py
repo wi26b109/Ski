@@ -3,7 +3,9 @@ from pathlib import Path
 
 import yaml
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+from .paths import RESOURCE_DIR
+
+DATA_DIR = RESOURCE_DIR / "data"
 
 
 class DataError(Exception):

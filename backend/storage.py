@@ -5,7 +5,9 @@ import threading
 import time
 from pathlib import Path
 
-SAVE_DIR = Path(__file__).resolve().parent.parent / "saves"
+from .paths import APP_DIR
+
+SAVE_DIR = APP_DIR / "saves"
 _lock = threading.RLock()
 
 LEER_STATS = {"rennen": 0, "siege": 0, "podien": 0, "saisons": 0, "perfekt": 0,

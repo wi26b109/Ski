@@ -8,8 +8,9 @@ from urllib.parse import parse_qs, urlparse
 
 from . import season, storage
 from .data_loader import GameData
+from .paths import RESOURCE_DIR
 
-FRONTEND = Path(__file__).resolve().parent.parent / "frontend"
+FRONTEND = RESOURCE_DIR / "frontend"
 MAX_BODY = 10_000
 LOCK = threading.Lock()  # ein Spieler-Zugriff nach dem anderen, genug fuer ein lokales Spiel
 DATA = None

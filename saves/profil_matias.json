@@ -1,10 +1,10 @@
 {
   "name": "Matias",
   "stats": {
-    "rennen": 30,
-    "siege": 13,
-    "podien": 14,
-    "saisons": 3,
+    "rennen": 40,
+    "siege": 19,
+    "podien": 23,
+    "saisons": 4,
     "perfekt": 0,
     "challenges": 0,
     "max_vorsprung": 11.26,
@@ -38,10 +38,10 @@
     "fit_00_olymp"
   ],
   "run": {
-    "id": "79c952a7",
+    "id": "37260437",
     "mode": "normal",
     "era": "2000er",
-    "seed": "fcb23552081a",
+    "seed": "e007cc8c361d",
     "woche": null,
     "status": "done",
     "slot_index": 5,
@@ -52,12 +52,12 @@
     "budget": null,
     "team": {
       "athlet": {
-        "id": "ath_00_pierre",
+        "id": "ath_00_lena",
         "tier": "profi"
       },
       "ski": {
-        "id": "ski_00_fabrik",
-        "tier": "legende"
+        "id": "ski_00_cup",
+        "tier": "profi"
       },
       "helm": {
         "id": "helm_00_aero",
@@ -76,162 +76,161 @@
     "results": [
       {
         "kurs": "levi",
-        "wetter": "sonne",
-        "zeit": 37.92,
+        "wetter": "sturm",
+        "zeit": 39.65,
         "platz": 1,
         "punkte": 100,
-        "geschwindigkeit": 15.58,
-        "grundzeit": 38.52,
-        "ereignisse": [
-          {
-            "name": "Perfekte Linie",
-            "diff": -0.6
-          },
-          {
-            "name": "Kein Fehler",
-            "diff": 0.0
-          }
-        ],
-        "abstand": 6.65,
+        "geschwindigkeit": 15.13,
+        "grundzeit": 39.65,
+        "ereignisse": [],
+        "abstand": 3.12,
         "feld": [
           {
             "name": "Matias",
             "nation": null,
-            "zeit": 37.92,
+            "zeit": 39.65,
             "du": true,
             "platz": 1
           },
           {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 44.57,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 42.77,
             "platz": 2
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 45.94,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 44.39,
             "platz": 3
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 46.13,
+            "name": "Zoran Unterweger",
+            "nation": "SWE",
+            "zeit": 45.34,
             "platz": 4
           },
           {
-            "name": "Dana Vonn-Berg",
-            "nation": "CRO",
-            "zeit": 46.2,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 45.71,
             "platz": 5
           },
           {
-            "name": "Ulrich Bergmann",
-            "nation": "SWE",
-            "zeit": 46.34,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 45.84,
             "platz": 6
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 46.91,
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 45.85,
             "platz": 7
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 47.64,
+            "name": "Pavel Kammerer",
+            "nation": "NOR",
+            "zeit": 46.5,
             "platz": 8
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 47.96,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 46.85,
             "platz": 9
           },
           {
-            "name": "Nils Oberhauser",
-            "nation": "NOR",
-            "zeit": 48.32,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 47.48,
             "platz": 10
           }
         ]
       },
       {
         "kurs": "soelden",
-        "wetter": "nebel",
-        "zeit": 52.43,
+        "wetter": "eis",
+        "zeit": 51.32,
         "platz": 1,
         "punkte": 100,
-        "geschwindigkeit": 20.98,
-        "grundzeit": 52.43,
+        "geschwindigkeit": 21.43,
+        "grundzeit": 51.32,
         "ereignisse": [
           {
-            "name": "Kein Fehler",
-            "diff": 0.0
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          },
+          {
+            "name": "Zu späte Kurve",
+            "diff": 1.6
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
           }
         ],
-        "abstand": 7.84,
+        "abstand": 7.54,
         "feld": [
           {
             "name": "Matias",
             "nation": null,
-            "zeit": 52.43,
+            "zeit": 51.32,
             "du": true,
             "platz": 1
           },
           {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 60.27,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 58.86,
             "platz": 2
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 61.95,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 60.48,
             "platz": 3
           },
           {
-            "name": "Ulrich Bergmann",
+            "name": "Zoran Unterweger",
             "nation": "SWE",
-            "zeit": 63.32,
+            "zeit": 61.06,
             "platz": 4
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 63.34,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 61.78,
             "platz": 5
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 63.53,
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 62.48,
             "platz": 6
           },
           {
-            "name": "Dana Vonn-Berg",
-            "nation": "CRO",
-            "zeit": 63.8,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 62.97,
             "platz": 7
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 64.19,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 63.95,
             "platz": 8
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 64.27,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 64.4,
             "platz": 9
           },
           {
-            "name": "Nils Oberhauser",
+            "name": "Pavel Kammerer",
             "nation": "NOR",
-            "zeit": 66.14,
+            "zeit": 65.43,
             "platz": 10
           }
         ]
@@ -239,323 +238,309 @@
       {
         "kurs": "lake_louise",
         "wetter": "sonne",
-        "zeit": 78.79,
+        "zeit": 82.07,
         "platz": 1,
         "punkte": 100,
-        "geschwindigkeit": 38.57,
-        "grundzeit": 75.19,
+        "geschwindigkeit": 35.34,
+        "grundzeit": 82.07,
         "ereignisse": [
           {
-            "name": "Tor verpasst",
-            "diff": 3.6
+            "name": "Kein Fehler",
+            "diff": 0.0
           }
         ],
-        "abstand": 11.26,
+        "abstand": 5.36,
         "feld": [
           {
             "name": "Matias",
             "nation": null,
-            "zeit": 78.79,
+            "zeit": 82.07,
             "du": true,
             "platz": 1
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 90.05,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 87.43,
             "platz": 2
           },
           {
-            "name": "Tobias Alpinger",
+            "name": "Zoran Unterweger",
             "nation": "SWE",
-            "zeit": 90.25,
+            "zeit": 89.64,
             "platz": 3
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 90.75,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 90.23,
             "platz": 4
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 91.42,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 91.52,
             "platz": 5
           },
           {
-            "name": "Ulrich Bergmann",
-            "nation": "SWE",
-            "zeit": 91.78,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 91.56,
             "platz": 6
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 92.08,
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 91.94,
             "platz": 7
           },
           {
-            "name": "Dana Vonn-Berg",
-            "nation": "CRO",
-            "zeit": 92.8,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 92.45,
             "platz": 8
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 93.39,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 93.78,
             "platz": 9
           },
           {
-            "name": "Nils Oberhauser",
+            "name": "Pavel Kammerer",
             "nation": "NOR",
-            "zeit": 94.37,
+            "zeit": 96.82,
             "platz": 10
           }
         ]
       },
       {
         "kurs": "val_gardena",
-        "wetter": "sonne",
-        "zeit": 58.03,
+        "wetter": "neuschnee",
+        "zeit": 61.73,
         "platz": 1,
         "punkte": 100,
-        "geschwindigkeit": 32.74,
-        "grundzeit": 58.03,
+        "geschwindigkeit": 30.29,
+        "grundzeit": 62.73,
         "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.0
+          },
           {
             "name": "Kein Fehler",
             "diff": 0.0
           }
         ],
-        "abstand": 8.35,
+        "abstand": 1.49,
         "feld": [
           {
             "name": "Matias",
             "nation": null,
-            "zeit": 58.03,
+            "zeit": 61.73,
             "du": true,
             "platz": 1
           },
           {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 66.38,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 63.22,
             "platz": 2
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 68.36,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 66.76,
             "platz": 3
           },
           {
-            "name": "Ulrich Bergmann",
+            "name": "Zoran Unterweger",
             "nation": "SWE",
-            "zeit": 68.45,
+            "zeit": 67.01,
             "platz": 4
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 69.53,
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 69.15,
             "platz": 5
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 69.64,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 69.19,
             "platz": 6
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 70.72,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 69.49,
             "platz": 7
           },
           {
-            "name": "Nils Oberhauser",
-            "nation": "NOR",
-            "zeit": 70.73,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 69.98,
             "platz": 8
           },
           {
-            "name": "Dana Vonn-Berg",
+            "name": "Georg Eggli",
             "nation": "CRO",
-            "zeit": 70.8,
+            "zeit": 70.36,
             "platz": 9
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 72.71,
+            "name": "Pavel Kammerer",
+            "nation": "NOR",
+            "zeit": 73.01,
             "platz": 10
           }
         ]
       },
       {
         "kurs": "adelboden",
-        "wetter": "sturm",
-        "zeit": 59.78,
+        "wetter": "sonne",
+        "zeit": 56.55,
         "platz": 1,
         "punkte": 100,
-        "geschwindigkeit": 20.34,
-        "grundzeit": 58.98,
-        "ereignisse": [
-          {
-            "name": "Kein Fehler",
-            "diff": 0.0
-          },
-          {
-            "name": "Kurve zu weit",
-            "diff": 0.8
-          },
-          {
-            "name": "Kein Fehler",
-            "diff": 0.0
-          }
-        ],
-        "abstand": 2.44,
+        "geschwindigkeit": 21.22,
+        "grundzeit": 56.55,
+        "ereignisse": [],
+        "abstand": 2.73,
         "feld": [
           {
             "name": "Matias",
             "nation": null,
-            "zeit": 59.78,
+            "zeit": 56.55,
             "du": true,
             "platz": 1
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 62.22,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 59.28,
             "platz": 2
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 62.35,
+            "name": "Zoran Unterweger",
+            "nation": "SWE",
+            "zeit": 62.12,
             "platz": 3
           },
           {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 62.67,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 62.65,
             "platz": 4
           },
           {
-            "name": "Ulrich Bergmann",
-            "nation": "SWE",
-            "zeit": 62.82,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 62.77,
             "platz": 5
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 63.34,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 63.06,
             "platz": 6
           },
           {
-            "name": "Dana Vonn-Berg",
+            "name": "Nora Kammerer",
             "nation": "CRO",
-            "zeit": 64.27,
+            "zeit": 63.15,
             "platz": 7
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 64.85,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 63.48,
             "platz": 8
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 66.05,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 64.1,
             "platz": 9
           },
           {
-            "name": "Nils Oberhauser",
+            "name": "Pavel Kammerer",
             "nation": "NOR",
-            "zeit": 66.53,
+            "zeit": 65.97,
             "platz": 10
           }
         ]
       },
       {
         "kurs": "wengen",
-        "wetter": "sonne",
-        "zeit": 90.74,
-        "platz": 1,
-        "punkte": 100,
-        "geschwindigkeit": 44.08,
-        "grundzeit": 90.74,
-        "ereignisse": [
-          {
-            "name": "Kein Fehler",
-            "diff": 0.0
-          }
-        ],
-        "abstand": 7.74,
+        "wetter": "eis",
+        "zeit": 98.07,
+        "platz": 2,
+        "punkte": 80,
+        "geschwindigkeit": 40.79,
+        "grundzeit": 98.07,
+        "ereignisse": [],
+        "abstand": -1.06,
         "feld": [
           {
-            "name": "Matias",
-            "nation": null,
-            "zeit": 90.74,
-            "du": true,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 97.01,
             "platz": 1
           },
           {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 98.48,
+            "name": "Matias",
+            "nation": null,
+            "zeit": 98.07,
+            "du": true,
             "platz": 2
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 101.24,
+            "name": "Zoran Unterweger",
+            "nation": "SWE",
+            "zeit": 99.95,
             "platz": 3
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 103.5,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 100.35,
             "platz": 4
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 104.25,
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 101.83,
             "platz": 5
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 104.73,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 105.07,
             "platz": 6
           },
           {
-            "name": "Ulrich Bergmann",
-            "nation": "SWE",
-            "zeit": 104.76,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 106.09,
             "platz": 7
           },
           {
-            "name": "Nils Oberhauser",
-            "nation": "NOR",
-            "zeit": 105.93,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 106.45,
             "platz": 8
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 106.66,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 106.79,
             "platz": 9
           },
           {
-            "name": "Dana Vonn-Berg",
-            "nation": "CRO",
-            "zeit": 107.12,
+            "name": "Pavel Kammerer",
+            "nation": "NOR",
+            "zeit": 107.32,
             "platz": 10
           }
         ]
@@ -563,11 +548,11 @@
       {
         "kurs": "kitzbuehel",
         "wetter": "sonne",
-        "zeit": 77.45,
-        "platz": 1,
-        "punkte": 100,
-        "geschwindigkeit": 41.33,
-        "grundzeit": 79.85,
+        "zeit": 84.76,
+        "platz": 2,
+        "punkte": 80,
+        "geschwindigkeit": 37.86,
+        "grundzeit": 87.16,
         "ereignisse": [
           {
             "name": "Perfekte Linie",
@@ -578,224 +563,225 @@
             "diff": -1.2
           }
         ],
-        "abstand": 10.36,
+        "abstand": -1.59,
         "feld": [
           {
-            "name": "Matias",
-            "nation": null,
-            "zeit": 77.45,
-            "du": true,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 83.17,
             "platz": 1
           },
           {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 87.81,
+            "name": "Matias",
+            "nation": null,
+            "zeit": 84.76,
+            "du": true,
             "platz": 2
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 88.02,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 85.69,
             "platz": 3
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 88.19,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 87.13,
             "platz": 4
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 89.29,
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 88.32,
             "platz": 5
           },
           {
-            "name": "Ulrich Bergmann",
-            "nation": "SWE",
-            "zeit": 90.35,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 89.29,
             "platz": 6
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 91.29,
+            "name": "Zoran Unterweger",
+            "nation": "SWE",
+            "zeit": 89.34,
             "platz": 7
           },
           {
-            "name": "Nils Oberhauser",
-            "nation": "NOR",
-            "zeit": 91.54,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 90.8,
             "platz": 8
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 92.06,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 91.09,
             "platz": 9
           },
           {
-            "name": "Dana Vonn-Berg",
-            "nation": "CRO",
-            "zeit": 92.09,
+            "name": "Pavel Kammerer",
+            "nation": "NOR",
+            "zeit": 91.65,
             "platz": 10
           }
         ]
       },
       {
         "kurs": "schladming",
-        "wetter": "neuschnee",
-        "zeit": 42.58,
-        "platz": 4,
-        "punkte": 50,
-        "geschwindigkeit": 15.26,
-        "grundzeit": 42.58,
-        "ereignisse": [],
-        "abstand": -1.05,
+        "wetter": "sonne",
+        "zeit": 40.64,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 15.76,
+        "grundzeit": 41.24,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.6
+          }
+        ],
+        "abstand": 1.46,
         "feld": [
-          {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 41.53,
-            "platz": 1
-          },
-          {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 42.03,
-            "platz": 2
-          },
-          {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 42.57,
-            "platz": 3
-          },
           {
             "name": "Matias",
             "nation": null,
-            "zeit": 42.58,
+            "zeit": 40.64,
             "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 42.1,
+            "platz": 2
+          },
+          {
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 42.48,
+            "platz": 3
+          },
+          {
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 42.63,
             "platz": 4
           },
           {
-            "name": "Ulrich Bergmann",
-            "nation": "SWE",
-            "zeit": 42.67,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 42.83,
             "platz": 5
           },
           {
-            "name": "Xaver Nyberg",
+            "name": "Zoran Unterweger",
             "nation": "SWE",
-            "zeit": 43.28,
+            "zeit": 42.93,
             "platz": 6
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 44.18,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 43.1,
             "platz": 7
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 44.21,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 43.66,
             "platz": 8
           },
           {
-            "name": "Dana Vonn-Berg",
-            "nation": "CRO",
-            "zeit": 44.73,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 44.06,
             "platz": 9
           },
           {
-            "name": "Nils Oberhauser",
+            "name": "Pavel Kammerer",
             "nation": "NOR",
-            "zeit": 44.77,
+            "zeit": 45.22,
             "platz": 10
           }
         ]
       },
       {
         "kurs": "kvitfjell",
-        "wetter": "eis",
-        "zeit": 60.06,
-        "platz": 1,
-        "punkte": 100,
-        "geschwindigkeit": 34.45,
-        "grundzeit": 58.06,
+        "wetter": "sonne",
+        "zeit": 62.12,
+        "platz": 6,
+        "punkte": 40,
+        "geschwindigkeit": 32.19,
+        "grundzeit": 62.12,
         "ereignisse": [
-          {
-            "name": "Ausrutscher",
-            "diff": 2.0
-          },
           {
             "name": "Kein Fehler",
             "diff": 0.0
           }
         ],
-        "abstand": 1.61,
+        "abstand": -3.72,
         "feld": [
           {
-            "name": "Matias",
-            "nation": null,
-            "zeit": 60.06,
-            "du": true,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 58.4,
             "platz": 1
           },
           {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 61.67,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 61.03,
             "platz": 2
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 62.32,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 61.11,
             "platz": 3
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 62.38,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 61.89,
             "platz": 4
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 62.57,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 61.95,
             "platz": 5
           },
           {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 62.67,
+            "name": "Matias",
+            "nation": null,
+            "zeit": 62.12,
+            "du": true,
             "platz": 6
           },
           {
-            "name": "Dana Vonn-Berg",
-            "nation": "CRO",
-            "zeit": 63.02,
+            "name": "Zoran Unterweger",
+            "nation": "SWE",
+            "zeit": 62.13,
             "platz": 7
           },
           {
-            "name": "Ulrich Bergmann",
-            "nation": "SWE",
-            "zeit": 63.39,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 62.18,
             "platz": 8
           },
           {
-            "name": "Nils Oberhauser",
-            "nation": "NOR",
-            "zeit": 64.3,
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 62.33,
             "platz": 9
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 65.33,
+            "name": "Pavel Kammerer",
+            "nation": "NOR",
+            "zeit": 65.79,
             "platz": 10
           }
         ]
@@ -803,82 +789,78 @@
       {
         "kurs": "finale",
         "wetter": "sonne",
-        "zeit": 57.73,
-        "platz": 2,
-        "punkte": 80,
-        "geschwindigkeit": 22.52,
-        "grundzeit": 57.73,
+        "zeit": 56.85,
+        "platz": 3,
+        "punkte": 60,
+        "geschwindigkeit": 22.55,
+        "grundzeit": 57.65,
         "ereignisse": [
           {
-            "name": "Kein Fehler",
-            "diff": 0.0
-          },
-          {
-            "name": "Kein Fehler",
-            "diff": 0.0
+            "name": "Perfekte Linie",
+            "diff": -0.8
           }
         ],
-        "abstand": -0.93,
+        "abstand": -2.0,
         "feld": [
           {
-            "name": "Tobias Alpinger",
-            "nation": "SWE",
-            "zeit": 56.8,
+            "name": "Eva Fankhauser",
+            "nation": "CAN",
+            "zeit": 54.85,
             "platz": 1
+          },
+          {
+            "name": "Zoran Unterweger",
+            "nation": "SWE",
+            "zeit": 56.81,
+            "platz": 2
           },
           {
             "name": "Matias",
             "nation": null,
-            "zeit": 57.73,
+            "zeit": 56.85,
             "du": true,
-            "platz": 2
-          },
-          {
-            "name": "Carlo Zurbriggen",
-            "nation": "SUI",
-            "zeit": 57.79,
             "platz": 3
           },
           {
-            "name": "Ivo Planker",
-            "nation": "FRA",
-            "zeit": 58.24,
+            "name": "Rafael Rainer",
+            "nation": "CRO",
+            "zeit": 57.24,
             "platz": 4
           },
           {
-            "name": "Ulrich Bergmann",
-            "nation": "SWE",
-            "zeit": 58.28,
+            "name": "Quentin Castelli",
+            "nation": "USA",
+            "zeit": 58.24,
             "platz": 5
           },
           {
-            "name": "Dana Vonn-Berg",
-            "nation": "CRO",
-            "zeit": 59.25,
+            "name": "Felix Fankhauser",
+            "nation": "GER",
+            "zeit": 58.33,
             "platz": 6
           },
           {
-            "name": "Xaver Hinterseer",
-            "nation": "SLO",
-            "zeit": 59.36,
+            "name": "Nora Kammerer",
+            "nation": "CRO",
+            "zeit": 58.92,
             "platz": 7
           },
           {
-            "name": "Nils Jörg",
-            "nation": "ITA",
-            "zeit": 59.54,
+            "name": "Jana Rainer",
+            "nation": "GER",
+            "zeit": 58.95,
             "platz": 8
           },
           {
-            "name": "Xaver Nyberg",
-            "nation": "SWE",
-            "zeit": 60.16,
+            "name": "Georg Eggli",
+            "nation": "CRO",
+            "zeit": 59.06,
             "platz": 9
           },
           {
-            "name": "Nils Oberhauser",
+            "name": "Pavel Kammerer",
             "nation": "NOR",
-            "zeit": 63.72,
+            "zeit": 60.79,
             "platz": 10
           }
         ]
@@ -892,56 +874,56 @@
     "mod_name": null,
     "rivalen": [
       {
-        "name": "Dana Vonn-Berg",
+        "name": "Quentin Castelli",
+        "nation": "USA",
+        "skill": -0.06
+      },
+      {
+        "name": "Nora Kammerer",
         "nation": "CRO",
-        "skill": -0.429
+        "skill": 0.536
       },
       {
-        "name": "Ivo Planker",
-        "nation": "FRA",
-        "skill": 1.107
+        "name": "Rafael Rainer",
+        "nation": "CRO",
+        "skill": 1.205
       },
       {
-        "name": "Carlo Zurbriggen",
-        "nation": "SUI",
-        "skill": 0.458
+        "name": "Felix Fankhauser",
+        "nation": "GER",
+        "skill": 0.751
       },
       {
-        "name": "Xaver Nyberg",
-        "nation": "SWE",
-        "skill": -0.772
+        "name": "Jana Rainer",
+        "nation": "GER",
+        "skill": 0.018
       },
       {
-        "name": "Tobias Alpinger",
-        "nation": "SWE",
-        "skill": 1.773
+        "name": "Eva Fankhauser",
+        "nation": "CAN",
+        "skill": 2.901
       },
       {
-        "name": "Nils Oberhauser",
+        "name": "Pavel Kammerer",
         "nation": "NOR",
-        "skill": -1.267
+        "skill": -1.507
       },
       {
-        "name": "Nils Jörg",
-        "nation": "ITA",
-        "skill": -0.475
+        "name": "Georg Eggli",
+        "nation": "CRO",
+        "skill": 0.32
       },
       {
-        "name": "Ulrich Bergmann",
+        "name": "Zoran Unterweger",
         "nation": "SWE",
-        "skill": 0.578
-      },
-      {
-        "name": "Xaver Hinterseer",
-        "nation": "SLO",
-        "skill": 0.493
+        "skill": 1.301
       }
     ],
-    "punkte": 930,
-    "siege": 8,
+    "punkte": 860,
+    "siege": 6,
     "podien": 9,
     "serie": 0,
-    "beste_serie": 7,
+    "beste_serie": 5,
     "bonus": 0
   }
 }

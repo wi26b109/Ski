@@ -30,10 +30,26 @@ Hilfe bei Problemen:
 |---|---|
 | `python` wird nicht gefunden | Unter Windows `py run.py` versuchen, unter macOS/Linux `python3 run.py`. Sonst Python neu installieren und „Add to PATH“ anhaken. |
 | `No module named 'yaml'` | Schritt 4 wiederholen (`pip install -r requirements.txt`, ggf. `py -m pip …` bzw. `python3 -m pip …`). |
-| Port 8000 ist belegt | Anderen Port nehmen: `python run.py 9000` und <http://127.0.0.1:9000/> öffnen. |
+| Port 8000 ist belegt | Das Spiel probiert automatisch den nächsten freien Port, sonst manuell: `python run.py 9000` und <http://127.0.0.1:9000/> öffnen. |
 | Seite bleibt leer | Läuft das Terminal noch? Seite mit `Strg + F5` neu laden. |
 
 Tests ausführen: `python -m unittest discover tests`
+
+---
+
+## Ohne Python: die EXE
+
+`Skirennspiel.exe` doppelklicken – fertig. Python oder andere Downloads sind nicht nötig (Windows 64 Bit). Es öffnet sich ein Konsolenfenster und der Browser; zum Beenden das Konsolenfenster schließen. Spielstände landen im Ordner `saves/` neben der EXE.
+Beim ersten Start kann Windows SmartScreen warnen („Weitere Informationen → Trotzdem ausführen“), weil die EXE nicht signiert ist.
+
+EXE selbst bauen (nach Änderungen am Code oder an den Daten):
+
+```bash
+pip install pyinstaller
+python -m PyInstaller --onefile --name Skirennspiel --add-data "data;data" --add-data "frontend;frontend" run.py
+```
+
+Die fertige Datei liegt dann in `dist/`. Änderungen an `data/` oder `frontend/` stecken in der EXE, deshalb nach Änderungen neu bauen.
 
 ---
 
