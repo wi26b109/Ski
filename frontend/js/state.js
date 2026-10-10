@@ -8,6 +8,7 @@ export const S = {
   name: "",
   tab: "play",       // play | sammlung | erfolge | listen | klassik
   fehler: "",
+  sim: null,         // {neu: Erfolge} solange die Saison-Wiedergabe laeuft
   ansichten: {},     // name -> render-Funktion
 };
 
@@ -28,7 +29,8 @@ function aktuelleAnsicht() {
   if (S.tab !== "play") return S.tab;
   const run = S.profil?.run;
   if (!run) return "home";
-  return run.status === "draft" ? "draft" : "done";
+  if (run.status === "draft") return "draft";
+  return S.sim ? "sim" : "done";
 }
 
 /** Fuehrt eine API-Aktion aus, uebernimmt das Profil und zeichnet neu. Fehler werden angezeigt. */

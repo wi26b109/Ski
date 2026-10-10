@@ -27,7 +27,10 @@ register("draft", root => {
   bind(root, {
     pick: async d => {
       const r = await aktion(() => api.pick(S.name, d.id));
-      if (r) { toastErfolge(r.neue_erfolge); render(); }
+      if (!r) return;
+      if (r.profil.run.status === "done") S.sim = { neu: r.neue_erfolge };  // Saison wurde simuliert: erst ablaufen lassen
+      else toastErfolge(r.neue_erfolge);
+      render();
     },
     reroll: async () => { if (await aktion(() => api.reroll(S.name))) render(); },
     abbrechen: async () => { if (confirm("Draft abbrechen?") && await aktion(() => api.aufgeben(S.name))) render(); },
