@@ -55,13 +55,6 @@ class RennformelTest(unittest.TestCase):
             r = engine.berechne_rennen(s, self.strecke, random.Random(seed), DATA)
             self.assertLessEqual(len(r["ereignisse"]), 6)
 
-    def test_besichtigung_verhindert_fehler(self):
-        s = {"helm": "anfaenger", "brille": "anfaenger", "ski": "anfaenger", "fitness": "anfaenger"}
-        for seed in range(30):
-            r = engine.berechne_rennen(s, self.strecke, random.Random(seed), DATA,
-                                       buffs={"fehler_block": 99})
-            self.assertTrue(all(e["diff"] <= 0 for e in r["ereignisse"]))
-
 
 class DatenTest(unittest.TestCase):
     def test_alle_epochen_haben_genug_karten(self):
@@ -120,6 +113,12 @@ class SaisonTest(unittest.TestCase):
         self.assertEqual(p["stats"]["saisons"], 1)
         self.assertEqual(p["stats"]["rennen"], 10)
 
+    def test_simuliere_saison(self):
+        p, run = self.saison("Auto")
+        season.simuliere_saison(run, DATA, p)
+        self.assertEqual(run["status"], "done")
+        self.assertEqual(len(run["results"]), 10)
+
     def test_rennen_ist_reproduzierbar(self):
         p1, r1 = self.saison("X1")
         p2, r2 = self.saison("X2")
@@ -128,27 +127,6 @@ class SaisonTest(unittest.TestCase):
         a, _ = season.fahre_rennen(r1, DATA, p1)
         b, _ = season.fahre_rennen(r2, DATA, p2)
         self.assertEqual(a["zeit"], b["zeit"])
-
-    def test_shop(self):
-        p, run = self.saison()
-        with self.assertRaises(season.GameError):
-            season.kaufe(run, DATA, "windkanal")  # keine Muenzen
-        run["coins"] = 500
-        season.kaufe(run, DATA, "windkanal")
-        self.assertEqual(run["levels"]["windkanal"], 1)
-        self.assertEqual(run["coins"], 460)
-        with self.assertRaises(season.GameError):
-            season.kaufe(run, DATA, "tierup", "athlet")
-        for s in ("ski", "helm", "brille", "fitness"):
-            while run["team"][s]["tier"] != "legende":
-                season.kaufe(run, DATA, "tierup", s)
-
-    def test_verbrauchsupgrade_wird_verbraucht(self):
-        p, run = self.saison()
-        run["coins"] = 100
-        season.kaufe(run, DATA, "wachs")
-        season.fahre_rennen(run, DATA, p)
-        self.assertEqual(run["lager"], {})
 
     def test_klassik_ausfall_und_highscore(self):
         p = neues_profil("K")

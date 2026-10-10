@@ -3,22 +3,20 @@
 Die Grundformel stammt aus dem urspruenglichen Spiel:
     Geschwindigkeit = Basis * Helm * Brille * Ski * Fitness
     Grundzeit       = Laenge / Geschwindigkeit
-Neu sind Athlet, Wetter, Upgrades und die Rivalen.
+Neu sind Athlet, Wetter und die Rivalen.
 """
 
 
 
 def berechne_rennen(sportler, strecke, rng, data, mit_zufall=True,
-                    wetter=None, fehler_zuschlag=0.0, buffs=None):
+                    wetter=None, fehler_zuschlag=0.0):
     """Berechnet ein Rennen fuer einen Sportler.
 
     sportler: {"helm": Stufe|None, "brille": Stufe|None, "ski": Stufe, "fitness": Stufe,
-               optional "athlet_faktor", "fehler_bonus", "speed_bonus"}
+               optional "athlet_faktor", "fehler_bonus"}
     strecke:  {"laenge": m, "speed": m/s, "ereignis_skala": float (optional)}
-    buffs:    {"speed": 0.02, "fehler_block": 1} - fuer ein Rennen verbrauchte Upgrades
     Gibt ein dict mit status, zeit, v, grund, ereignisse zurueck.
     """
-    buffs = buffs or {}
     ergebnis = {"status": "ok", "zeit": None, "v": None, "grund": None, "ereignisse": []}
 
     # 1. Pflichtausruestung
@@ -31,7 +29,6 @@ def berechne_rennen(sportler, strecke, rng, data, mit_zufall=True,
     v = (strecke["speed"] * f(sportler["helm"]) * f(sportler["brille"])
          * f(sportler["ski"]) * f(sportler["fitness"]))
     v *= sportler.get("athlet_faktor", 1.0)
-    v *= 1 + sportler.get("speed_bonus", 0.0) + buffs.get("speed", 0.0)
     if wetter:
         v *= wetter["speed"]
     zeit = strecke["laenge"] / v
@@ -45,16 +42,11 @@ def berechne_rennen(sportler, strecke, rng, data, mit_zufall=True,
         chance = min(0.6, max(0.02, chance))
         skala = strecke.get("ereignis_skala", 1.0)
         lim = data.game["ereignisse_pro_rennen"]
-        block = buffs.get("fehler_block", 0)
         for _ in range(rng.randint(lim["min"], lim["max"])):
             ev = rng.choice(data.events)
             diff = ev["diff"]
             eintritt = chance if diff > 0 else 1 - chance
             if diff != 0 and rng.random() > eintritt:
-                continue
-            if diff > 0 and block > 0:
-                block -= 1
-                ergebnis["ereignisse"].append({"name": ev["name"], "diff": 0, "verhindert": True})
                 continue
             diff = round(diff * skala, 2)
             zeit += diff
@@ -101,14 +93,3 @@ def punkte_fuer_platz(platz, data):
     tabelle = data.game["punkte"]
     return tabelle[platz - 1] if 1 <= platz <= len(tabelle) else 0
 
-
-def muenzen_fuer_platz(platz, data, mult=1.0):
-    m = data.game["muenzen"]
-    wert = m["basis"]
-    if platz == 1:
-        wert += m["sieg"]
-    elif platz <= 3:
-        wert += m["podium"]
-    elif platz <= 10:
-        wert += m["top10"]
-    return int(round(wert * mult))

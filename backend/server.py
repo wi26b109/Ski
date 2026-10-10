@@ -40,7 +40,9 @@ def api_start(profil, b):
 
 
 def api_pick(profil, b):
-    neu = season.pick(_aktiver_run(profil), DATA, profil, b.get("karte"))
+    run = _aktiver_run(profil)
+    neu = season.pick(run, DATA, profil, b.get("karte"))
+    neu += season.simuliere_saison(run, DATA, profil)  # nach dem letzten Pick laeuft die ganze Saison durch
     return _run_antwort(profil, neue_erfolge=neu)
 
 
@@ -52,11 +54,6 @@ def api_reroll(profil, b):
 def api_race(profil, b):
     ergebnis, neu = season.fahre_rennen(_aktiver_run(profil), DATA, profil)
     return _run_antwort(profil, ergebnis=ergebnis, neue_erfolge=neu)
-
-
-def api_buy(profil, b):
-    season.kaufe(_aktiver_run(profil), DATA, b.get("upgrade"), b.get("slot"))
-    return _run_antwort(profil)
 
 
 def api_abandon(profil, b):
@@ -72,7 +69,7 @@ def api_klassik(profil, b):
 
 POST_ROUTEN = {
     "/api/run/start": api_start, "/api/run/pick": api_pick, "/api/run/reroll": api_reroll,
-    "/api/run/race": api_race, "/api/run/buy": api_buy, "/api/run/abandon": api_abandon,
+    "/api/run/race": api_race, "/api/run/abandon": api_abandon,
     "/api/klassik": api_klassik,
 }
 
@@ -103,7 +100,11 @@ class Handler(BaseHTTPRequestHandler):
             return self._json(storage.lade_bestenlisten())
         if url.path == "/api/profile":
             with LOCK:
-                return self._json(profil_ansicht(storage.lade_profil(q.get("name", [""])[0])))
+                profil = storage.lade_profil(q.get("name", [""])[0])
+                if profil["run"] and profil["run"]["status"] == "season":  # Spielstand aus einer aelteren Version
+                    season.simuliere_saison(profil["run"], DATA, profil)
+                    storage.speichere_profil(profil)
+                return self._json(profil_ansicht(profil))
         if url.path.startswith("/api/"):
             return self._json({"fehler": "Unbekannte Route."}, 404)
         self._static(url.path)

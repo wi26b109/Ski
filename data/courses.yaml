@@ -8,13 +8,13 @@ disziplinen:
   abfahrt:      { name: Abfahrt,      icon: "🏔️", ereignis_skala: 1.2 }
 
 saison:
-  - { id: levi,        name: Levi Slalom,             ort: Levi (FIN),        disziplin: slalom,       laenge: 600,  speed: 12, rivalen: 1.100 }
-  - { id: soelden,     name: Rettenbach Riesenslalom, ort: Sölden (AUT),      disziplin: riesenslalom, laenge: 1100, speed: 16, rivalen: 1.125 }
-  - { id: lake_louise, name: Lake Louise Abfahrt,     ort: Lake Louise (CAN), disziplin: abfahrt,      laenge: 2900, speed: 28, rivalen: 1.150 }
-  - { id: val_gardena, name: Saslong Super-G,         ort: Gröden (ITA),       disziplin: supers,       laenge: 1900, speed: 24, rivalen: 1.175 }
-  - { id: adelboden,   name: Chuenisbärgli Riesen,    ort: Adelboden (SUI),    disziplin: riesenslalom, laenge: 1200, speed: 16, rivalen: 1.200 }
-  - { id: wengen,      name: Lauberhorn Abfahrt,      ort: Wengen (SUI),       disziplin: abfahrt,      laenge: 4000, speed: 32, rivalen: 1.225 }
-  - { id: kitzbuehel,  name: Streif Abfahrt,           ort: Kitzbühel (AUT),    disziplin: abfahrt,      laenge: 3300, speed: 30, rivalen: 1.250 }
-  - { id: schladming,  name: Planai Nachtslalom,      ort: Schladming (AUT),   disziplin: slalom,       laenge: 650,  speed: 12, rivalen: 1.275 }
-  - { id: kvitfjell,   name: Kvitfjell Super-G,       ort: Kvitfjell (NOR),    disziplin: supers,       laenge: 2000, speed: 25, rivalen: 1.300 }
-  - { id: finale,      name: Weltcup-Finale,          ort: Soldeu (AND),        disziplin: riesenslalom, laenge: 1300, speed: 17, rivalen: 1.325 }
+  - { id: levi,        name: Levi Slalom,             ort: Levi (FIN),        disziplin: slalom,       laenge: 600,  speed: 12, rivalen: 1.070 }
+  - { id: soelden,     name: Rettenbach Riesenslalom, ort: Sölden (AUT),      disziplin: riesenslalom, laenge: 1100, speed: 16, rivalen: 1.095 }
+  - { id: lake_louise, name: Lake Louise Abfahrt,     ort: Lake Louise (CAN), disziplin: abfahrt,      laenge: 2900, speed: 28, rivalen: 1.120 }
+  - { id: val_gardena, name: Saslong Super-G,         ort: Gröden (ITA),       disziplin: supers,       laenge: 1900, speed: 24, rivalen: 1.145 }
+  - { id: adelboden,   name: Chuenisbärgli Riesen,    ort: Adelboden (SUI),    disziplin: riesenslalom, laenge: 1200, speed: 16, rivalen: 1.170 }
+  - { id: wengen,      name: Lauberhorn Abfahrt,      ort: Wengen (SUI),       disziplin: abfahrt,      laenge: 4000, speed: 32, rivalen: 1.195 }
+  - { id: kitzbuehel,  name: Streif Abfahrt,           ort: Kitzbühel (AUT),    disziplin: abfahrt,      laenge: 3300, speed: 30, rivalen: 1.220 }
+  - { id: schladming,  name: Planai Nachtslalom,      ort: Schladming (AUT),   disziplin: slalom,       laenge: 650,  speed: 12, rivalen: 1.245 }
+  - { id: kvitfjell,   name: Kvitfjell Super-G,       ort: Kvitfjell (NOR),    disziplin: supers,       laenge: 2000, speed: 25, rivalen: 1.270 }
+  - { id: finale,      name: Weltcup-Finale,          ort: Soldeu (AND),        disziplin: riesenslalom, laenge: 1300, speed: 17, rivalen: 1.295 }

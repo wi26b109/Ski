@@ -11,9 +11,8 @@ modifikatoren:
     cap: 80
   - id: turbo
     name: Turbo-Rivalen
-    beschreibung: Alle Rivalen sind um 3 % schneller, dafür gibt es doppelt Münzen.
+    beschreibung: Alle Rivalen sind um 3 % schneller.
     rivalen: 0.03
-    muenzen: 2.0
   - id: nebel
     name: Nebelwoche
     beschreibung: Alle Rennen im Nebel, dafür sind die Rivalen etwas langsamer.

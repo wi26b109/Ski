@@ -33,7 +33,6 @@ class GameData:
         kurse = _lade("courses.yaml")
         self.disciplines = kurse["disziplinen"]
         self.season = kurse["saison"]
-        self.upgrades = {u["id"]: u for u in _lade("upgrades.yaml")["upgrades"]}
         ch = _lade("challenges.yaml")
         self.challenge_mods = ch["modifikatoren"]
         self.challenge_eras = ch["epochen"]
@@ -97,12 +96,10 @@ class GameData:
             "eras": list(self.eras.values()),
             "disziplinen": self.disciplines,
             "saison": self.season,
-            "upgrades": list(self.upgrades.values()),
             "erfolge": self.achievements,
             "karten": list(self.cards.values()),
             "wetter": list(self.weather.values()),
             "ereignisse": self.events,
             "draft": self.game["draft"],
-            "muenzen": self.game["muenzen"],
             "perfekte_saison_bonus": self.game["perfekte_saison_bonus"],
         }

@@ -1,4 +1,4 @@
-"""Spielablauf einer Saison: Draft -> 10 Rennen -> Shop zwischen den Rennen -> Abschluss.
+"""Spielablauf einer Saison: Draft -> 10 Rennen -> Abschluss.
 
 Ein "run" ist ein einfaches dict (gut als JSON speicherbar). Alle Zufaelle kommen aus einem
 Seed, daher ergibt dasselbe Seed (Wochen-Challenge) fuer alle Spieler dieselben Angebote und Rennen.
@@ -45,14 +45,13 @@ def neuer_run(data, profil, mode, era):
         raise GameError("Unbekannte Epoche.")
 
     em = data.eras[era]["modifikator"]
-    mods = {"fehler": em["fehler"], "rivalen": em["rivalen"] + mod.get("rivalen", 0.0),
-            "muenzen": em["muenzen"] * mod.get("muenzen", 1.0), "wetter": mod.get("wetter")}
+    mods = {"fehler": em["fehler"], "rivalen": em["rivalen"] + mod.get("rivalen", 0.0), "wetter": mod.get("wetter")}
     rng = random.Random(f"{seed}|rivalen")
     run = {
         "id": secrets.token_hex(4), "mode": mode, "era": era, "seed": seed, "woche": woche,
         "status": "draft", "slot_index": 0, "offers": [], "rerolls": data.game["draft"]["rerolls"],
         "reroll_zaehler": 0, "cap": cap, "budget": cap, "team": {}, "race_index": 0,
-        "results": [], "coins": 0, "levels": {}, "lager": {}, "mods": mods, "mod_name": mod.get("name"),
+        "results": [], "mods": mods, "mod_name": mod.get("name"),
         "rivalen": engine.erzeuge_rivalen(rng, data, data.game["feld"]["groesse"] - 1),
         "punkte": 0, "siege": 0, "podien": 0, "serie": 0, "beste_serie": 0, "bonus": 0,
     }
@@ -131,19 +130,12 @@ def _sportler(run, data, kurs):
     team = run["team"]
     athlet = data.cards[team["athlet"]["id"]]
     tier = team["athlet"]["tier"]
-    levels = run["levels"]
-    speed_bonus = fehler = 0.0
-    for uid, stufe in levels.items():
-        w = data.upgrades[uid]["wirkung"]
-        speed_bonus += w.get("speed", 0.0) * stufe
-        fehler += w.get("fehler", 0.0) * stufe
     return {
         "helm": team["helm"]["tier"], "brille": team["brille"]["tier"],
         "ski": team["ski"]["tier"], "fitness": team["fitness"]["tier"],
         "athlet_faktor": data.game["athlet_faktoren"][tier] * athlet["profil"][kurs["disziplin"]],
         "fehler_bonus": athlet.get("fehler_bonus", 0.0),
-        "speed_bonus": speed_bonus,
-    }, fehler
+    }
 
 
 def _wetter(run, data, rng):
@@ -162,27 +154,16 @@ def fahre_rennen(run, data, profil):
     rng = random.Random(f"{run['seed']}|rennen|{idx}")
     wetter = _wetter(run, data, rng)
 
-    # Verbrauchs-Upgrades gelten fuer dieses Rennen und sind danach weg
-    buffs = {"speed": 0.0, "fehler_block": 0}
-    for uid, anzahl in run["lager"].items():
-        w = data.upgrades[uid]["wirkung"]
-        buffs["speed"] += w.get("speed", 0.0) * anzahl
-        buffs["fehler_block"] += w.get("fehler_block", 0) * anzahl
-    benutzt = {k: v for k, v in run["lager"].items() if v}
-    run["lager"] = {}
-
-    sportler, upgrade_fehler = _sportler(run, data, kurs)
+    sportler = _sportler(run, data, kurs)
     strecke = {"laenge": kurs["laenge"], "speed": kurs["speed"], "ereignis_skala": disz["ereignis_skala"]}
     r = engine.berechne_rennen(sportler, strecke, rng, data, True, wetter,
-                               run["mods"]["fehler"] + upgrade_fehler, buffs)
+                               run["mods"]["fehler"])
     rivalen = engine.rivalen_zeiten(run["rivalen"], kurs, rng, data, run["mods"]["rivalen"])
     platz = 1 + sum(1 for x in rivalen if x["zeit"] < r["zeit"])
     bester_rivale = min(x["zeit"] for x in rivalen)
     abstand = round(bester_rivale - r["zeit"], 2)  # >0: Sieg mit Vorsprung
 
     punkte = engine.punkte_fuer_platz(platz, data)
-    muenzen = engine.muenzen_fuer_platz(platz, data, run["mods"]["muenzen"])
-    run["coins"] += muenzen
     run["punkte"] += punkte
     if platz == 1:
         run["siege"] += 1
@@ -198,9 +179,9 @@ def fahre_rennen(run, data, profil):
         e["platz"] = i
     ergebnis = {
         "kurs": kurs["id"], "wetter": wetter["id"], "zeit": r["zeit"], "platz": platz,
-        "punkte": punkte, "muenzen": muenzen, "geschwindigkeit": round(r["v"], 2),
+        "punkte": punkte, "geschwindigkeit": round(r["v"], 2),
         "grundzeit": round(r["grund"], 2), "ereignisse": r["ereignisse"], "abstand": abstand,
-        "buffs": benutzt, "feld": feld,
+        "feld": feld,
     }
     run["results"].append(ergebnis)
     run["race_index"] += 1
@@ -217,6 +198,14 @@ def fahre_rennen(run, data, profil):
     if fertig:
         _saison_beenden(run, data, profil)
     return ergebnis, achievements.pruefe(data, profil, run)
+
+
+def simuliere_saison(run, data, profil):
+    """Faehrt alle noch offenen Rennen am Stueck. Gibt die neu freigeschalteten Erfolge zurueck."""
+    neu = []
+    while run["status"] == "season":
+        neu += fahre_rennen(run, data, profil)[1]
+    return neu
 
 
 def _saison_beenden(run, data, profil):
@@ -239,44 +228,6 @@ def _saison_beenden(run, data, profil):
                           gleich=lambda e: e["name"] == profil["name"] and e["woche"] == run["woche"])
     else:
         storage.trage_ein("saison", eintrag, "punkte", True, n)
-
-
-# --- Shop -----------------------------------------------------------------------
-
-def kaufe(run, data, upgrade_id, slot=None):
-    if run["status"] != "season":
-        raise GameError("Der Shop ist nur während der Saison offen.")
-    u = data.upgrades.get(upgrade_id)
-    if not u:
-        raise GameError("Unbekanntes Upgrade.")
-
-    if u["typ"] == "level":
-        stufe = run["levels"].get(upgrade_id, 0)
-        if stufe >= len(u["kosten"]):
-            raise GameError("Maximale Stufe erreicht.")
-        preis = u["kosten"][stufe]
-    elif u["typ"] == "verbrauch":
-        if run["lager"].get(upgrade_id, 0) >= 3:
-            raise GameError("Maximal 3 davon im Lager.")
-        preis = u["kosten"]
-    else:  # tierup
-        if slot not in run["team"] or slot == "athlet":
-            raise GameError("Dieser Slot kann nicht verbessert werden.")
-        reihe = data.game["stufen_reihenfolge"]
-        neu = reihe.index(run["team"][slot]["tier"]) + 1
-        if neu >= len(reihe):
-            raise GameError("Bereits höchste Stufe.")
-        preis = u["preise"][reihe[neu]]
-
-    if run["coins"] < preis:
-        raise GameError("Nicht genug Münzen.")
-    run["coins"] -= preis
-    if u["typ"] == "level":
-        run["levels"][upgrade_id] = run["levels"].get(upgrade_id, 0) + 1
-    elif u["typ"] == "verbrauch":
-        run["lager"][upgrade_id] = run["lager"].get(upgrade_id, 0) + 1
-    else:
-        run["team"][slot]["tier"] = reihe[neu]
 
 
 # --- Ansicht fuer das Frontend ----------------------------------------------------

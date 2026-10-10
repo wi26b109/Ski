@@ -105,3 +105,6 @@ canvas{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);di
 @keyframes in{from{transform:translateY(12px);opacity:0}}
 @media (prefers-reduced-motion:reduce){.toast{animation:none}.gc{transition:none}}
 @media (max-width:600px){.who{width:100%}.who input{flex:1;width:auto}h1{font-size:26px}}
+details.rennen{border-top:1px solid var(--line);padding:8px 0}
+details.rennen summary{cursor:pointer;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+details.rennen .rechts{margin-left:auto;font-weight:600}

@@ -7,7 +7,7 @@ stufen:
   profi:     { name: Profi,    faktor: 1.05, fehlerchance: 0.10, gewicht: 25, kosten: 22 }
   legende:   { name: Legende,  faktor: 1.08, fehlerchance: 0.05, gewicht: 5,  kosten: 32 }
 
-# Reihenfolge der Stufen (fuer Ausruestungs-Upgrades)
+# Reihenfolge der Stufen
 stufen_reihenfolge: [anfaenger, standard, profi, legende]
 
 # Athlet-Faktor (kleiner als Ausruestung, damit die Ausruestung wichtig bleibt)
@@ -43,13 +43,6 @@ feld:
 # Punkte pro Platz (wie im Weltcup), danach 0
 punkte: [100, 80, 60, 50, 45, 40, 36, 32, 29, 26, 24, 22, 20, 18, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 perfekte_saison_bonus: 500
-
-# Muenzen nach dem Rennen
-muenzen:
-  basis: 10
-  sieg: 40
-  podium: 25
-  top10: 12
 
 # Bestenlisten
 highscore_eintraege: 10

@@ -7,8 +7,6 @@ export const S = {
   profil: null,
   name: "",
   tab: "play",       // play | sammlung | erfolge | listen | klassik
-  overlay: null,     // "race": Ergebnis-Ansicht nach einem Rennen
-  letztes: null,     // letztes Rennergebnis
   fehler: "",
   ansichten: {},     // name -> render-Funktion
 };
@@ -28,10 +26,9 @@ export function render() {
 
 function aktuelleAnsicht() {
   if (S.tab !== "play") return S.tab;
-  if (S.overlay === "race" && S.letztes) return "race";
   const run = S.profil?.run;
   if (!run) return "home";
-  return { draft: "draft", season: "season", done: "done" }[run.status];
+  return run.status === "draft" ? "draft" : "done";
 }
 
 /** Fuehrt eine API-Aktion aus, uebernimmt das Profil und zeichnet neu. Fehler werden angezeigt. */

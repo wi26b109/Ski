@@ -17,7 +17,6 @@ export const api = {
   pick: (name, karte) => anfrage("/api/run/pick", { name, karte }),
   reroll: name => anfrage("/api/run/reroll", { name }),
   rennen: name => anfrage("/api/run/race", { name }),
-  kaufen: (name, upgrade, slot) => anfrage("/api/run/buy", { name, upgrade, slot }),
   aufgeben: name => anfrage("/api/run/abandon", { name }),
   klassik: (name, p) => anfrage("/api/klassik", { name, ...p }),
   klassikReset: () => anfrage("/api/klassik/reset", {}),

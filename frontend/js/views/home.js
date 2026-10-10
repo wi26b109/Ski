@@ -15,7 +15,7 @@ register("home", root => {
   const st = S.profil.stats;
   root.innerHTML = `
     <h1>Kann dein Team eine Saison <span style="color:var(--blue)">10-0</span> fahren?</h1>
-    <p class="sub">Draft dein Rennteam aus Athlet, Ski, Helm, Brille und Coach, gewinne alle 10 Weltcup-Rennen und sammle Münzen für Upgrades. Ohne Helm und Brille bist du raus – die blaue Markierung kennt keine Gnade.</p>
+    <p class="sub">Draft dein Rennteam aus Athlet, Ski, Helm, Brille und Coach, gewinne alle 10 Weltcup-Rennen. Ohne Helm und Brille bist du raus – die blaue Markierung kennt keine Gnade.</p>
 
     <section class="card"><h2>1. Modus</h2>
       <div class="grid g3">${Object.entries(MODI).map(([id, m]) => `

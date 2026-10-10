@@ -3,8 +3,6 @@ import { S, render, ladeProfil } from "./state.js";
 import { esc } from "./util.js";
 import "./views/home.js";
 import "./views/draft.js";
-import "./views/season.js";
-import "./views/race.js";
 import "./views/done.js";
 import "./views/meta.js";
 import "./views/klassik.js";
@@ -18,7 +16,6 @@ function navAufbauen() {
     const b = e.target.closest("button");
     if (!b) return;
     S.tab = b.dataset.tab;
-    if (S.tab === "play") S.overlay = null;
     if (S.tab === "listen" || S.tab === "klassik") S.listen = await api.bestenlisten();
     render();
   });
@@ -27,8 +24,6 @@ function navAufbauen() {
 async function profilWechseln(name) {
   S.name = (name || "").trim().slice(0, 20) || "Spieler";
   try { localStorage.setItem("ski-name", S.name); } catch { /* privater Modus */ }
-  S.overlay = null;
-  S.letztes = null;
   await ladeProfil();
   render();
 }
