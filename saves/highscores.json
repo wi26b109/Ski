@@ -52,6 +52,16 @@
     },
     {
       "name": "Anna",
+      "punkte": 260,
+      "siege": 0,
+      "podien": 0,
+      "era": "1980er",
+      "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
+      "name": "Anna",
       "punkte": 245,
       "siege": 2,
       "podien": 2,
