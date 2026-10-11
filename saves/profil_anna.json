@@ -1,12 +1,12 @@
 {
   "name": "Anna",
   "stats": {
-    "rennen": 40,
+    "rennen": 50,
     "siege": 9,
     "podien": 10,
-    "saisons": 4,
+    "saisons": 5,
     "perfekt": 0,
-    "challenges": 0,
+    "challenges": 1,
     "max_vorsprung": 11.96,
     "foto": 0,
     "beste_punkte": 795
@@ -18,7 +18,8 @@
     "sammler10",
     "abstand",
     "serie3",
-    "serie6"
+    "serie6",
+    "challenge"
   ],
   "karten": [
     "ath_00_sofia",
@@ -35,7 +36,11 @@
     "ski_80_race",
     "helm_80_kunststoff",
     "brille_80_fluo",
-    "fit_80_kraft"
+    "fit_80_kraft",
+    "ath_80_luca",
+    "helm_80_neon",
+    "brille_80_schnee",
+    "fit_80_jogging"
   ],
   "run": {
     "id": "52eae802",
@@ -43,22 +48,916 @@
     "era": "1980er",
     "seed": "challenge-2026-W41",
     "woche": "2026-W41",
-    "status": "draft",
-    "slot_index": 0,
-    "offers": [
-      "ath_80_luca",
-      "ath_80_hansi",
-      "ath_80_franz",
-      "ath_80_erik",
-      "ath_80_monika"
-    ],
+    "status": "done",
+    "slot_index": 5,
+    "offers": [],
     "rerolls": 2,
-    "reroll_zaehler": 0,
+    "reroll_zaehler": 5,
     "cap": 95,
-    "budget": 95,
-    "team": {},
-    "race_index": 0,
-    "results": [],
+    "budget": 11,
+    "team": {
+      "athlet": {
+        "id": "ath_80_luca",
+        "tier": "standard"
+      },
+      "ski": {
+        "id": "ski_80_race",
+        "tier": "profi"
+      },
+      "helm": {
+        "id": "helm_80_neon",
+        "tier": "legende"
+      },
+      "brille": {
+        "id": "brille_80_schnee",
+        "tier": "anfaenger"
+      },
+      "fitness": {
+        "id": "fit_80_jogging",
+        "tier": "anfaenger"
+      }
+    },
+    "race_index": 10,
+    "results": [
+      {
+        "kurs": "levi",
+        "wetter": "nebel",
+        "zeit": 56.31,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 11.13,
+        "grundzeit": 53.91,
+        "ereignisse": [
+          {
+            "name": "Ausrutscher",
+            "diff": 1.2
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Zu späte Kurve",
+            "diff": 1.2
+          }
+        ],
+        "abstand": -11.74,
+        "feld": [
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 44.57,
+            "platz": 1
+          },
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 44.59,
+            "platz": 2
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 45.9,
+            "platz": 3
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 46.68,
+            "platz": 4
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 47.82,
+            "platz": 5
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 48.06,
+            "platz": 6
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 48.13,
+            "platz": 7
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 48.17,
+            "platz": 8
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 48.5,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 56.31,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "soelden",
+        "wetter": "nebel",
+        "zeit": 77.25,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 14.7,
+        "grundzeit": 74.85,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Tor verpasst",
+            "diff": 2.4
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -16.35,
+        "feld": [
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 60.9,
+            "platz": 1
+          },
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 60.91,
+            "platz": 2
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 62.48,
+            "platz": 3
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 63.08,
+            "platz": 4
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 64.01,
+            "platz": 5
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 64.07,
+            "platz": 6
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 64.31,
+            "platz": 7
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 64.52,
+            "platz": 8
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 64.83,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 77.25,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "lake_louise",
+        "wetter": "nebel",
+        "zeit": 118.62,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 24.95,
+        "grundzeit": 116.22,
+        "ereignisse": [
+          {
+            "name": "Zu späte Kurve",
+            "diff": 2.4
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -29.07,
+        "feld": [
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 89.55,
+            "platz": 1
+          },
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 90.18,
+            "platz": 2
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 92.01,
+            "platz": 3
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 93.58,
+            "platz": 4
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 94.5,
+            "platz": 5
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 94.53,
+            "platz": 6
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 95.35,
+            "platz": 7
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 95.39,
+            "platz": 8
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 95.47,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 118.62,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "val_gardena",
+        "wetter": "nebel",
+        "zeit": 92.94,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 21.61,
+        "grundzeit": 87.94,
+        "ereignisse": [
+          {
+            "name": "Zu späte Kurve",
+            "diff": 2.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Tor verpasst",
+            "diff": 3.0
+          }
+        ],
+        "abstand": -25.9,
+        "feld": [
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 67.04,
+            "platz": 1
+          },
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 67.7,
+            "platz": 2
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 69.43,
+            "platz": 3
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 69.87,
+            "platz": 4
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 69.96,
+            "platz": 5
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 70.08,
+            "platz": 6
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 70.22,
+            "platz": 7
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 70.5,
+            "platz": 8
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 71.78,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 92.94,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "adelboden",
+        "wetter": "nebel",
+        "zeit": 83.26,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 14.7,
+        "grundzeit": 81.66,
+        "ereignisse": [
+          {
+            "name": "Tor verpasst",
+            "diff": 2.4
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          }
+        ],
+        "abstand": -21.54,
+        "feld": [
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 61.72,
+            "platz": 1
+          },
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 63.14,
+            "platz": 2
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 63.72,
+            "platz": 3
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 63.78,
+            "platz": 4
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 65.1,
+            "platz": 5
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 65.12,
+            "platz": 6
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 65.24,
+            "platz": 7
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 66.05,
+            "platz": 8
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 66.57,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 83.26,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "wengen",
+        "wetter": "nebel",
+        "zeit": 147.47,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 28.52,
+        "grundzeit": 140.27,
+        "ereignisse": [
+          {
+            "name": "Ausrutscher",
+            "diff": 2.4
+          },
+          {
+            "name": "Ausrutscher",
+            "diff": 2.4
+          },
+          {
+            "name": "Ausrutscher",
+            "diff": 2.4
+          }
+        ],
+        "abstand": -45.76,
+        "feld": [
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 101.71,
+            "platz": 1
+          },
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 102.43,
+            "platz": 2
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 103.44,
+            "platz": 3
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 104.87,
+            "platz": 4
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 106.72,
+            "platz": 5
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 106.91,
+            "platz": 6
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 106.94,
+            "platz": 7
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 107.67,
+            "platz": 8
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 107.73,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 147.47,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "kitzbuehel",
+        "wetter": "nebel",
+        "zeit": 124.63,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 26.74,
+        "grundzeit": 123.43,
+        "ereignisse": [
+          {
+            "name": "Tor verpasst",
+            "diff": 3.6
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.2
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.2
+          }
+        ],
+        "abstand": -37.62,
+        "feld": [
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 87.01,
+            "platz": 1
+          },
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 87.92,
+            "platz": 2
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 88.18,
+            "platz": 3
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 91.52,
+            "platz": 4
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 91.63,
+            "platz": 5
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 92.08,
+            "platz": 6
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 93.28,
+            "platz": 7
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 93.66,
+            "platz": 8
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 95.64,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 124.63,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "schladming",
+        "wetter": "nebel",
+        "zeit": 61.4,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 11.13,
+        "grundzeit": 58.4,
+        "ereignisse": [
+          {
+            "name": "Kurve zu weit",
+            "diff": 0.6
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.6
+          },
+          {
+            "name": "Tor verpasst",
+            "diff": 1.8
+          },
+          {
+            "name": "Zu späte Kurve",
+            "diff": 1.2
+          }
+        ],
+        "abstand": -18.64,
+        "feld": [
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 42.76,
+            "platz": 1
+          },
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 42.83,
+            "platz": 2
+          },
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 42.99,
+            "platz": 3
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 43.82,
+            "platz": 4
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 44.01,
+            "platz": 5
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 44.07,
+            "platz": 6
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 44.71,
+            "platz": 7
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 44.9,
+            "platz": 8
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 45.15,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 61.4,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "kvitfjell",
+        "wetter": "nebel",
+        "zeit": 88.86,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 22.51,
+        "grundzeit": 88.86,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -28.53,
+        "feld": [
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 60.33,
+            "platz": 1
+          },
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 62.19,
+            "platz": 2
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 62.94,
+            "platz": 3
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 63.49,
+            "platz": 4
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 63.98,
+            "platz": 5
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 64.29,
+            "platz": 6
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 64.31,
+            "platz": 7
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 64.54,
+            "platz": 8
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 64.78,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 88.86,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "finale",
+        "wetter": "nebel",
+        "zeit": 90.46,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 15.61,
+        "grundzeit": 83.26,
+        "ereignisse": [
+          {
+            "name": "Zu späte Kurve",
+            "diff": 1.6
+          },
+          {
+            "name": "Zu späte Kurve",
+            "diff": 1.6
+          },
+          {
+            "name": "Tor verpasst",
+            "diff": 2.4
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          },
+          {
+            "name": "Tor verpasst",
+            "diff": 2.4
+          }
+        ],
+        "abstand": -32.64,
+        "feld": [
+          {
+            "name": "Nils Alpinger",
+            "nation": "USA",
+            "zeit": 57.82,
+            "platz": 1
+          },
+          {
+            "name": "Lotta Alpinger",
+            "nation": "GER",
+            "zeit": 58.4,
+            "platz": 2
+          },
+          {
+            "name": "Zoran Innerhofer",
+            "nation": "USA",
+            "zeit": 59.35,
+            "platz": 3
+          },
+          {
+            "name": "Lars Moser",
+            "nation": "NOR",
+            "zeit": 59.75,
+            "platz": 4
+          },
+          {
+            "name": "Jana Fankhauser",
+            "nation": "SLO",
+            "zeit": 59.8,
+            "platz": 5
+          },
+          {
+            "name": "Zoran Lechner",
+            "nation": "SWE",
+            "zeit": 60.13,
+            "platz": 6
+          },
+          {
+            "name": "Oskar Tanner",
+            "nation": "SUI",
+            "zeit": 61.33,
+            "platz": 7
+          },
+          {
+            "name": "Jana Zurbriggen",
+            "nation": "CRO",
+            "zeit": 61.66,
+            "platz": 8
+          },
+          {
+            "name": "Alex Eggli",
+            "nation": "SLO",
+            "zeit": 61.76,
+            "platz": 9
+          },
+          {
+            "name": "Anna",
+            "nation": null,
+            "zeit": 90.46,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      }
+    ],
     "mods": {
       "fehler": 0.04,
       "rivalen": -0.02,
@@ -112,7 +1011,7 @@
         "skill": 0.057
       }
     ],
-    "punkte": 0,
+    "punkte": 260,
     "siege": 0,
     "podien": 0,
     "serie": 0,

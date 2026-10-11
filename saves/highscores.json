@@ -11,11 +11,31 @@
       "datum": "2026-10-10"
     },
     {
+      "name": "Spieler2",
+      "punkte": 916,
+      "siege": 8,
+      "podien": 9,
+      "era": "2000er",
+      "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-11"
+    },
+    {
       "name": "Matias",
       "punkte": 860,
       "siege": 6,
       "podien": 9,
       "era": "2000er",
+      "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
+      "name": "Spieler1",
+      "punkte": 836,
+      "siege": 7,
+      "podien": 8,
+      "era": "2020er",
       "modus": "normal",
       "woche": null,
       "datum": "2026-10-10"
@@ -36,6 +56,16 @@
       "siege": 5,
       "podien": 5,
       "era": "2000er",
+      "modus": "normal",
+      "woche": null,
+      "datum": "2026-10-10"
+    },
+    {
+      "name": "Spieler1",
+      "punkte": 512,
+      "siege": 2,
+      "podien": 3,
+      "era": "2020er",
       "modus": "normal",
       "woche": null,
       "datum": "2026-10-10"
@@ -69,29 +99,20 @@
       "modus": "cap",
       "woche": null,
       "datum": "2026-10-10"
-    },
-    {
-      "name": "Matias",
-      "punkte": 18,
-      "siege": 0,
-      "podien": 0,
-      "era": "zufall",
-      "modus": "cap",
-      "woche": null,
-      "datum": "2026-10-10"
-    },
+    }
+  ],
+  "challenge": [
     {
       "name": "Anna",
-      "punkte": 10,
+      "punkte": 260,
       "siege": 0,
       "podien": 0,
-      "era": "2000er",
-      "modus": "cap",
-      "woche": null,
+      "era": "1980er",
+      "modus": "challenge",
+      "woche": "2026-W41",
       "datum": "2026-10-10"
     }
   ],
-  "challenge": [],
   "zeiten": [
     {
       "name": "Matias",

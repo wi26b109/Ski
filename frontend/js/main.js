@@ -1,6 +1,6 @@
 import { api } from "./api.js";
 import { S, render, ladeProfil } from "./state.js";
-import { esc } from "./util.js";
+import { esc, toast } from "./util.js";
 import "./views/home.js";
 import "./views/draft.js";
 import "./views/sim.js";
@@ -8,6 +8,39 @@ import "./views/done.js";
 import "./views/meta.js";
 
 const TABS = [["play", "Spielen"], ["sammlung", "Sammlung"], ["erfolge", "Erfolge"], ["listen", "Bestenlisten"]];
+const THEME_KEY = "ski-theme";
+
+function themeSetzen(theme, speichern = false) {
+  const dunkel = theme === "dark";
+  const button = document.getElementById("theme-toggle");
+  const label = dunkel ? "Zum Hellmodus wechseln" : "Zum Dunkelmodus wechseln";
+  document.documentElement.dataset.theme = dunkel ? "dark" : "light";
+  button.textContent = dunkel ? "🌙" : "☀️";
+  button.setAttribute("aria-label", label);
+  button.setAttribute("aria-pressed", String(dunkel));
+  button.title = label;
+
+  if (speichern) {
+    try {
+      localStorage.setItem(THEME_KEY, dunkel ? "dark" : "light");
+    } catch {
+      toast("⚠️ Modus konnte nicht gespeichert werden.");
+    }
+  }
+}
+
+function themeAufbauen() {
+  let theme = "light";
+  try {
+    if (localStorage.getItem(THEME_KEY) === "dark") theme = "dark";
+  } catch {
+    toast("⚠️ Gespeicherter Modus konnte nicht geladen werden.");
+  }
+  themeSetzen(theme);
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    themeSetzen(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true);
+  });
+}
 
 function navAufbauen() {
   const nav = document.getElementById("nav");
@@ -45,4 +78,5 @@ async function start() {
   }
 }
 
+themeAufbauen();
 start();

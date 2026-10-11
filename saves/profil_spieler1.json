@@ -1,0 +1,965 @@
+{
+  "name": "Spieler1",
+  "stats": {
+    "rennen": 20,
+    "siege": 9,
+    "podien": 11,
+    "saisons": 2,
+    "perfekt": 0,
+    "challenges": 0,
+    "max_vorsprung": 9.31,
+    "foto": 0,
+    "beste_punkte": 836
+  },
+  "erfolge": [
+    "erster_sieg",
+    "erstes_podium",
+    "saison_fertig",
+    "abstand",
+    "serie3",
+    "serie6",
+    "punkte800"
+  ],
+  "karten": [
+    "ath_20_emma",
+    "ski_20_pro",
+    "helm_20_wind",
+    "brille_20_foto",
+    "fit_20_ki",
+    "ath_20_jonas",
+    "helm_20_nano",
+    "brille_20_hud",
+    "fit_20_daten"
+  ],
+  "run": {
+    "id": "3dcf77b2",
+    "mode": "normal",
+    "era": "2020er",
+    "seed": "228278215a6b",
+    "woche": null,
+    "status": "done",
+    "slot_index": 5,
+    "offers": [],
+    "rerolls": 1,
+    "reroll_zaehler": 6,
+    "cap": null,
+    "budget": null,
+    "team": {
+      "athlet": {
+        "id": "ath_20_jonas",
+        "tier": "profi"
+      },
+      "ski": {
+        "id": "ski_20_pro",
+        "tier": "profi"
+      },
+      "helm": {
+        "id": "helm_20_nano",
+        "tier": "legende"
+      },
+      "brille": {
+        "id": "brille_20_hud",
+        "tier": "profi"
+      },
+      "fitness": {
+        "id": "fit_20_daten",
+        "tier": "profi"
+      }
+    },
+    "race_index": 10,
+    "results": [
+      {
+        "kurs": "levi",
+        "wetter": "eis",
+        "zeit": 40.63,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 15.45,
+        "grundzeit": 38.83,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kurve zu weit",
+            "diff": 0.6
+          },
+          {
+            "name": "Ausrutscher",
+            "diff": 1.2
+          }
+        ],
+        "abstand": 2.68,
+        "feld": [
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 40.63,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 43.31,
+            "platz": 2
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 43.45,
+            "platz": 3
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 43.92,
+            "platz": 4
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 44.29,
+            "platz": 5
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 44.59,
+            "platz": 6
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 44.6,
+            "platz": 7
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 46.43,
+            "platz": 8
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 46.67,
+            "platz": 9
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 48.26,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "soelden",
+        "wetter": "eis",
+        "zeit": 54.74,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 21.02,
+        "grundzeit": 52.34,
+        "ereignisse": [
+          {
+            "name": "Tor verpasst",
+            "diff": 2.4
+          }
+        ],
+        "abstand": 3.19,
+        "feld": [
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 54.74,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 57.93,
+            "platz": 2
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 59.43,
+            "platz": 3
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 59.71,
+            "platz": 4
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 59.91,
+            "platz": 5
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 60.28,
+            "platz": 6
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 60.8,
+            "platz": 7
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 62.4,
+            "platz": 8
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 63.97,
+            "platz": 9
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 64.37,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "lake_louise",
+        "wetter": "sonne",
+        "zeit": 78.09,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 37.14,
+        "grundzeit": 78.09,
+        "ereignisse": [],
+        "abstand": 9.31,
+        "feld": [
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 78.09,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 87.4,
+            "platz": 2
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 87.55,
+            "platz": 3
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 88.44,
+            "platz": 4
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 88.64,
+            "platz": 5
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 89.71,
+            "platz": 6
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 90.09,
+            "platz": 7
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 90.13,
+            "platz": 8
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 90.31,
+            "platz": 9
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 95.59,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "val_gardena",
+        "wetter": "sonne",
+        "zeit": 58.69,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 31.83,
+        "grundzeit": 59.69,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": 5.5,
+        "feld": [
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 58.69,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 64.19,
+            "platz": 2
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 64.86,
+            "platz": 3
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 65.63,
+            "platz": 4
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 65.98,
+            "platz": 5
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 66.88,
+            "platz": 6
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 67.48,
+            "platz": 7
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 68.27,
+            "platz": 8
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 69.84,
+            "platz": 9
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 70.12,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "adelboden",
+        "wetter": "eis",
+        "zeit": 55.49,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 21.02,
+        "grundzeit": 57.09,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": 4.44,
+        "feld": [
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 55.49,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 59.93,
+            "platz": 2
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 60.02,
+            "platz": 3
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 61.42,
+            "platz": 4
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 61.72,
+            "platz": 5
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 61.83,
+            "platz": 6
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 63.31,
+            "platz": 7
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 63.43,
+            "platz": 8
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 63.89,
+            "platz": 9
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 65.46,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "wengen",
+        "wetter": "eis",
+        "zeit": 93.31,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 42.87,
+        "grundzeit": 93.31,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kurve zu weit",
+            "diff": 1.2
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.2
+          }
+        ],
+        "abstand": 4.21,
+        "feld": [
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 93.31,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 97.52,
+            "platz": 2
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 97.75,
+            "platz": 3
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 99.31,
+            "platz": 4
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 101.53,
+            "platz": 5
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 102.26,
+            "platz": 6
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 103.09,
+            "platz": 7
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 105.41,
+            "platz": 8
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 107.05,
+            "platz": 9
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 107.7,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "kitzbuehel",
+        "wetter": "eis",
+        "zeit": 84.51,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 40.19,
+        "grundzeit": 82.11,
+        "ereignisse": [
+          {
+            "name": "Kurve zu weit",
+            "diff": 1.2
+          },
+          {
+            "name": "Zu späte Kurve",
+            "diff": 2.4
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.2
+          }
+        ],
+        "abstand": 0.25,
+        "feld": [
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 84.51,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 84.76,
+            "platz": 2
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 86.51,
+            "platz": 3
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 86.59,
+            "platz": 4
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 87.45,
+            "platz": 5
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 87.98,
+            "platz": 6
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 88.27,
+            "platz": 7
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 90.61,
+            "platz": 8
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 93.04,
+            "platz": 9
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 93.29,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "schladming",
+        "wetter": "sonne",
+        "zeit": 41.29,
+        "platz": 4,
+        "punkte": 50,
+        "geschwindigkeit": 15.3,
+        "grundzeit": 42.49,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.6
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.6
+          }
+        ],
+        "abstand": -1.87,
+        "feld": [
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 39.42,
+            "platz": 1
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 40.04,
+            "platz": 2
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 41.07,
+            "platz": 3
+          },
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 41.29,
+            "du": true,
+            "platz": 4
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 41.86,
+            "platz": 5
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 41.94,
+            "platz": 6
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 42.02,
+            "platz": 7
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 43.66,
+            "platz": 8
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 43.96,
+            "platz": 9
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 44.09,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "kvitfjell",
+        "wetter": "neuschnee",
+        "zeit": 60.55,
+        "platz": 3,
+        "punkte": 60,
+        "geschwindigkeit": 32.5,
+        "grundzeit": 61.55,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.0
+          }
+        ],
+        "abstand": -1.77,
+        "feld": [
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 58.78,
+            "platz": 1
+          },
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 60.2,
+            "platz": 2
+          },
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 60.55,
+            "du": true,
+            "platz": 3
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 60.7,
+            "platz": 4
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 60.88,
+            "platz": 5
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 61.89,
+            "platz": 6
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 62.21,
+            "platz": 7
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 64.16,
+            "platz": 8
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 64.51,
+            "platz": 9
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 64.91,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "finale",
+        "wetter": "sturm",
+        "zeit": 62.85,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 21.23,
+        "grundzeit": 61.25,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          },
+          {
+            "name": "Tor verpasst",
+            "diff": 2.4
+          }
+        ],
+        "abstand": -6.55,
+        "feld": [
+          {
+            "name": "Jana Vonn-Berg",
+            "nation": "SLO",
+            "zeit": 56.3,
+            "platz": 1
+          },
+          {
+            "name": "Lars Fankhauser",
+            "nation": "CAN",
+            "zeit": 56.51,
+            "platz": 2
+          },
+          {
+            "name": "Mia Lechner",
+            "nation": "GER",
+            "zeit": 56.55,
+            "platz": 3
+          },
+          {
+            "name": "Ida Neuner",
+            "nation": "GER",
+            "zeit": 57.04,
+            "platz": 4
+          },
+          {
+            "name": "Quentin Novak",
+            "nation": "SWE",
+            "zeit": 57.43,
+            "platz": 5
+          },
+          {
+            "name": "Nils Rainer",
+            "nation": "FRA",
+            "zeit": 58.4,
+            "platz": 6
+          },
+          {
+            "name": "Frida Neuner",
+            "nation": "USA",
+            "zeit": 58.43,
+            "platz": 7
+          },
+          {
+            "name": "Viktor Bergmann",
+            "nation": "AUT",
+            "zeit": 59.51,
+            "platz": 8
+          },
+          {
+            "name": "Bea Castelli",
+            "nation": "FIN",
+            "zeit": 60.5,
+            "platz": 9
+          },
+          {
+            "name": "Spieler1",
+            "nation": null,
+            "zeit": 62.85,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      }
+    ],
+    "mods": {
+      "fehler": -0.02,
+      "rivalen": 0.02,
+      "wetter": null
+    },
+    "mod_name": null,
+    "rivalen": [
+      {
+        "name": "Ida Neuner",
+        "nation": "GER",
+        "skill": 0.998
+      },
+      {
+        "name": "Bea Castelli",
+        "nation": "FIN",
+        "skill": -1.284
+      },
+      {
+        "name": "Viktor Bergmann",
+        "nation": "AUT",
+        "skill": -1.097
+      },
+      {
+        "name": "Lars Fankhauser",
+        "nation": "CAN",
+        "skill": 1.581
+      },
+      {
+        "name": "Quentin Novak",
+        "nation": "SWE",
+        "skill": 1.592
+      },
+      {
+        "name": "Jana Vonn-Berg",
+        "nation": "SLO",
+        "skill": 1.478
+      },
+      {
+        "name": "Nils Rainer",
+        "nation": "FRA",
+        "skill": 0.423
+      },
+      {
+        "name": "Frida Neuner",
+        "nation": "USA",
+        "skill": -0.439
+      },
+      {
+        "name": "Mia Lechner",
+        "nation": "GER",
+        "skill": 1.465
+      }
+    ],
+    "punkte": 836,
+    "siege": 7,
+    "podien": 8,
+    "serie": 0,
+    "beste_serie": 7,
+    "bonus": 0
+  }
+}
