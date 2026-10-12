@@ -1,0 +1,235 @@
+warning: in the working copy of 'frontend/css/style.css', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/frontend/css/style.css b/frontend/css/style.css[m
+[1mindex baf9ec3..86e0ef9 100644[m
+[1m--- a/frontend/css/style.css[m
+[1m+++ b/frontend/css/style.css[m
+[36m@@ -1,7 +1,7 @@[m
+ :root{box-sizing:border-box;[m
+[31m---bg:#f9e96b;--card:#fff;--ink:#12263a;--mute:#5d7286;--line:#d3dfea;--blue:#1f6fe0;--red:#c8372d;--ok:#1d8a4e;--gold:#b8860b;[m
+[32m+[m[32m--bg:#fff;--card:#fff;--ink:#12263a;--mute:#5d7286;--line:#d3dfea;--blue:#1f6fe0;--red:#c8372d;--ok:#1d8a4e;--gold:#b8860b;[m
+ --t-anfaenger:#7b8794;--t-standard:#1f6fe0;--t-profi:#8a3ffc;--t-legende:#d99a00;--shadow:0 2px 10px rgba(18,38,58,.08)}[m
+[31m-@media (prefers-color-scheme:dark){:root{--bg:#f4d93d;--card:#152535;--ink:#e8f0f7;--mute:#93a7ba;--line:#26394c;--blue:#5aa2ff;--red:#ff7a70;--ok:#5fd394;--gold:#f2c14e;[m
+[32m+[m[32m@media (prefers-color-scheme:dark){:root{--bg:#fff;--card:#152535;--ink:#e8f0f7;--mute:#93a7ba;--line:#26394c;--blue:#5aa2ff;--red:#ff7a70;--ok:#5fd394;--gold:#f2c14e;[m
+ --t-anfaenger:#9aa7b4;--t-standard:#5aa2ff;--t-profi:#b78bff;--t-legende:#f2c14e;--shadow:0 2px 10px rgba(0,0,0,.35)}}[m
+ :root[data-theme="dark"]{--bg:#000}[m
+ *,*:before,*:after{box-sizing:inherit}[m
+[1mdiff --git a/saves/profil_spieler2.json b/saves/profil_spieler2.json[m
+[1mindex 8f3c123..853d4c2 100644[m
+[1m--- a/saves/profil_spieler2.json[m
+[1m+++ b/saves/profil_spieler2.json[m
+[36m@@ -27,919 +27,5 @@[m
+     "brille_00_pola",[m
+     "fit_00_sport"[m
+   ],[m
+[31m-  "run": {[m
+[31m-    "id": "746e0ce4",[m
+[31m-    "mode": "normal",[m
+[31m-    "era": "2000er",[m
+[31m-    "seed": "4ae4a5bbe359",[m
+[31m-    "woche": null,[m
+[31m-    "status": "done",[m
+[31m-    "slot_index": 5,[m
+[31m-    "offers": [],[m
+[31m-    "rerolls": 2,[m
+[31m-    "reroll_zaehler": 5,[m
+[31m-    "cap": null,[m
+[31m-    "budget": null,[m
+[31m-    "team": {[m
+[31m-      "athlet": {[m
+[31m-        "id": "ath_00_pierre",[m
+[31m-        "tier": "profi"[m
+[31m-      },[m
+[31m-      "ski": {[m
+[31m-        "id": "ski_00_fabrik",[m
+[31m-        "tier": "legende"[m
+[31m-      },[m
+[31m-      "helm": {[m
+[31m-        "id": "helm_00_aero",[m
+[31m-        "tier": "profi"[m
+[31m-      },[m
+[31m-      "brille": {[m
+[31m-        "id": "brille_00_pola",[m
+[31m-        "tier": "profi"[m
+[31m-      },[m
+[31m-      "fitness": {[m
+[31m-        "id": "fit_00_sport",[m
+[31m-        "tier": "profi"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "race_index": 10,[m
+[31m-    "results": [[m
+[31m-      {[m
+[31m-        "kurs": "levi",[m
+[31m-        "wetter": "sonne",[m
+[31m-        "zeit": 39.02,[m
+[31m-        "platz": 1,[m
+[31m-        "punkte": 100,[m
+[31m-        "geschwindigkeit": 15.14,[m
+[31m-        "grundzeit": 39.62,[m
+[31m-        "ereignisse": [[m
+[31m-          {[m
+[31m-            "name": "Perfekte Linie",[m
+[31m-            "diff": -0.6[m
+[31m-          }[m
+[31m-        ],[m
+[31m-        "abstand": 6.94,[m
+[31m-        "feld": [[m
+[31m-          {[m
+[31m-            "name": "Spieler2",[m
+[31m-            "nation": null,[m
+[31m-            "zeit": 39.02,[m
+[31m-            "du": true,[m
+[31m-            "platz": 1[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Tobias Nyberg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 45.96,[m
+[31m-            "platz": 2[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Walcher",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 46.13,[m
+[31m-            "platz": 3[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Cora Vonn-Berg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 46.89,[m
+[31m-            "platz": 4[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Hanna Dreyer",[m
+[31m-            "nation": "FIN",[m
+[31m-            "zeit": 47.11,[m
+[31m-            "platz": 5[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Ivo Lechner",[m
+[31m-            "nation": "USA",[m
+[31m-            "zeit": 47.57,[m
+[31m-            "platz": 6[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Carlo Fankhauser",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 47.8,[m
+[31m-            "platz": 7[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Jana Zurbriggen",[m
+[31m-            "nation": "ITA",[m
+[31m-            "zeit": 48.28,[m
+[31m-            "platz": 8[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Frida Lechner",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 48.33,[m
+[31m-            "platz": 9[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Novak",[m
+[31m-            "nation": "AUT",[m
+[31m-            "zeit": 48.64,[m
+[31m-            "platz": 10[m
+[31m-          }[m
+[31m-        ][m
+[31m-      },[m
+[31m-      {[m
+[31m-        "kurs": "soelden",[m
+[31m-        "wetter": "eis",[m
+[31m-        "zeit": 59.26,[m
+[31m-        "platz": 1,[m
+[31m-        "punkte": 100,[m
+[31m-        "geschwindigkeit": 20.81,[m
+[31m-        "grundzeit": 52.86,[m
+[31m-        "ereignisse": [[m
+[31m-          {[m
+[31m-            "name": "Tor verpasst",[m
+[31m-            "diff": 2.4[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Zu späte Kurve",[m
+[31m-            "diff": 1.6[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Kein Fehler",[m
+[31m-            "diff": 0.0[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Kein Fehler",[m
+[31m-            "diff": 0.0[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Tor verpasst",[m
+[31m-            "diff": 2.4[m
+[31m-          }[m
+[31m-        ],[m
+[31m-        "abstand": 0.15,[m
+[31m-        "feld": [[m
+[31m-          {[m
+[31m-            "name": "Spieler2",[m
+[31m-            "nation": null,[m
+[31m-            "zeit": 59.26,[m
+[31m-            "du": true,[m
+[31m-            "platz": 1[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Tobias Nyberg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 59.41,[m
+[31m-            "platz": 2[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Walcher",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 61.3,[m
+[31m-            "platz": 3[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Hanna Dreyer",[m
+[31m-            "nation": "FIN",[m
+[31m-            "zeit": 62.11,[m
+[31m-            "platz": 4[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Cora Vonn-Berg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 62.46,[m
+[31m-            "platz": 5[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Ivo Lechner",[m
+[31m-            "nation": "USA",[m
+[31m-            "zeit": 63.03,[m
+[31m-            "platz": 6[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Carlo Fankhauser",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 63.31,[m
+[31m-            "platz": 7[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Jana Zurbriggen",[m
+[31m-            "nation": "ITA",[m
+[31m-            "zeit": 64.07,[m
+[31m-            "platz": 8[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Novak",[m
+[31m-            "nation": "AUT",[m
+[31m-            "zeit": 64.45,[m
+[31m-            "platz": 9[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Frida Lechner",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 66.02,[m
+[31m-            "platz": 10[m
+[31m-          }[m
+[31m-        ][m
+[31m-      },[m
+[31m-      {[m
