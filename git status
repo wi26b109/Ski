@@ -233,3 +233,264 @@ warning: in the working copy of 'frontend/css/style.css', LF will be replaced by
 [31m-        ][m
 [31m-      },[m
 [31m-      {[m
+[31m-        "kurs": "lake_louise",[m
+[31m-        "wetter": "sonne",[m
+[31m-        "zeit": 79.74,[m
+[31m-        "platz": 1,[m
+[31m-        "punkte": 100,[m
+[31m-        "geschwindigkeit": 37.5,[m
+[31m-        "grundzeit": 77.34,[m
+[31m-        "ereignisse": [[m
+[31m-          {[m
+[31m-            "name": "Ausrutscher",[m
+[31m-            "diff": 2.4[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Kein Fehler",[m
+[31m-            "diff": 0.0[m
+[31m-          }[m
+[31m-        ],[m
+[31m-        "abstand": 8.72,[m
+[31m-        "feld": [[m
+[31m-          {[m
+[31m-            "name": "Spieler2",[m
+[31m-            "nation": null,[m
+[31m-            "zeit": 79.74,[m
+[31m-            "du": true,[m
+[31m-            "platz": 1[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Walcher",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 88.46,[m
+[31m-            "platz": 2[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Tobias Nyberg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 89.04,[m
+[31m-            "platz": 3[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Cora Vonn-Berg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 91.23,[m
+[31m-            "platz": 4[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Hanna Dreyer",[m
+[31m-            "nation": "FIN",[m
+[31m-            "zeit": 92.72,[m
+[31m-            "platz": 5[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Carlo Fankhauser",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 92.96,[m
+[31m-            "platz": 6[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Ivo Lechner",[m
+[31m-            "nation": "USA",[m
+[31m-            "zeit": 93.44,[m
+[31m-            "platz": 7[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Jana Zurbriggen",[m
+[31m-            "nation": "ITA",[m
+[31m-            "zeit": 94.3,[m
+[31m-            "platz": 8[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Novak",[m
+[31m-            "nation": "AUT",[m
+[31m-            "zeit": 95.7,[m
+[31m-            "platz": 9[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Frida Lechner",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 96.9,[m
+[31m-            "platz": 10[m
+[31m-          }[m
+[31m-        ][m
+[31m-      },[m
+[31m-      {[m
+[31m-        "kurs": "val_gardena",[m
+[31m-        "wetter": "eis",[m
+[31m-        "zeit": 61.1,[m
+[31m-        "platz": 1,[m
+[31m-        "punkte": 100,[m
+[31m-        "geschwindigkeit": 32.15,[m
+[31m-        "grundzeit": 59.1,[m
+[31m-        "ereignisse": [[m
+[31m-          {[m
+[31m-            "name": "Zu späte Kurve",[m
+[31m-            "diff": 2.0[m
+[31m-          }[m
+[31m-        ],[m
+[31m-        "abstand": 6.2,[m
+[31m-        "feld": [[m
+[31m-          {[m
+[31m-            "name": "Spieler2",[m
+[31m-            "nation": null,[m
+[31m-            "zeit": 61.1,[m
+[31m-            "du": true,[m
+[31m-            "platz": 1[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Tobias Nyberg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 67.3,[m
+[31m-            "platz": 2[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Cora Vonn-Berg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 68.53,[m
+[31m-            "platz": 3[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Hanna Dreyer",[m
+[31m-            "nation": "FIN",[m
+[31m-            "zeit": 68.6,[m
+[31m-            "platz": 4[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Walcher",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 69.27,[m
+[31m-            "platz": 5[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Ivo Lechner",[m
+[31m-            "nation": "USA",[m
+[31m-            "zeit": 69.36,[m
+[31m-            "platz": 6[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Novak",[m
+[31m-            "nation": "AUT",[m
+[31m-            "zeit": 70.65,[m
+[31m-            "platz": 7[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Carlo Fankhauser",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 71.33,[m
+[31m-            "platz": 8[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Jana Zurbriggen",[m
+[31m-            "nation": "ITA",[m
+[31m-            "zeit": 71.42,[m
+[31m-            "platz": 9[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Frida Lechner",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 74.05,[m
+[31m-            "platz": 10[m
+[31m-          }[m
+[31m-        ][m
+[31m-      },[m
+[31m-      {[m
+[31m-        "kurs": "adelboden",[m
+[31m-        "wetter": "neuschnee",[m
+[31m-        "zeit": 59.43,[m
+[31m-        "platz": 1,[m
+[31m-        "punkte": 100,[m
+[31m-        "geschwindigkeit": 20.19,[m
+[31m-        "grundzeit": 59.43,[m
+[31m-        "ereignisse": [],[m
+[31m-        "abstand": 1.85,[m
+[31m-        "feld": [[m
+[31m-          {[m
+[31m-            "name": "Spieler2",[m
+[31m-            "nation": null,[m
+[31m-            "zeit": 59.43,[m
+[31m-            "du": true,[m
+[31m-            "platz": 1[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Tobias Nyberg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 61.28,[m
+[31m-            "platz": 2[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Walcher",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 62.02,[m
+[31m-            "platz": 3[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Cora Vonn-Berg",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 63.88,[m
+[31m-            "platz": 4[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Ivo Lechner",[m
+[31m-            "nation": "USA",[m
+[31m-            "zeit": 63.95,[m
+[31m-            "platz": 5[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Hanna Dreyer",[m
+[31m-            "nation": "FIN",[m
+[31m-            "zeit": 64.21,[m
+[31m-            "platz": 6[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Carlo Fankhauser",[m
+[31m-            "nation": "SLO",[m
+[31m-            "zeit": 65.4,[m
+[31m-            "platz": 7[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Frida Lechner",[m
+[31m-            "nation": "SWE",[m
+[31m-            "zeit": 65.86,[m
+[31m-            "platz": 8[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Jana Zurbriggen",[m
+[31m-            "nation": "ITA",[m
+[31m-            "zeit": 66.03,[m
+[31m-            "platz": 9[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Novak",[m
+[31m-            "nation": "AUT",[m
+[31m-            "zeit": 66.33,[m
+[31m-            "platz": 10[m
+[31m-          }[m
+[31m-        ][m
+[31m-      },[m
+[31m-      {[m
+[31m-        "kurs": "wengen",[m
+[31m-        "wetter": "eis",[m
+[31m-        "zeit": 91.21,[m
+[31m-        "platz": 1,[m
+[31m-        "punkte": 100,[m
+[31m-        "geschwindigkeit": 43.28,[m
+[31m-        "grundzeit": 92.41,[m
+[31m-        "ereignisse": [[m
+[31m-          {[m
+[31m-            "name": "Perfekte Linie",[m
+[31m-            "diff": -1.2[m
+[31m-          }[m
+[31m-        ],[m
+[31m-        "abstand": 9.17,[m
+[31m-        "feld": [[m
+[31m-          {[m
+[31m-            "name": "Spieler2",[m
+[31m-            "nation": null,[m
+[31m-            "zeit": 91.21,[m
+[31m-            "du": true,[m
+[31m-            "platz": 1[m
+[31m-          },[m
+[31m-          {[m
+[31m-            "name": "Yannick Walcher",[m
+[31m- 
