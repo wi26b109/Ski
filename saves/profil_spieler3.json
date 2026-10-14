@@ -1,0 +1,954 @@
+{
+  "name": "Spieler3",
+  "stats": {
+    "rennen": 30,
+    "siege": 1,
+    "podien": 2,
+    "saisons": 3,
+    "perfekt": 0,
+    "challenges": 0,
+    "max_vorsprung": 0.77,
+    "foto": 0,
+    "beste_punkte": 388
+  },
+  "erfolge": [
+    "saison_fertig",
+    "sammler10",
+    "erster_sieg",
+    "erstes_podium"
+  ],
+  "karten": [
+    "ath_00_pierre",
+    "ski_00_fabrik",
+    "helm_00_basic",
+    "brille_00_pola",
+    "fit_00_hobby",
+    "ath_00_lena",
+    "helm_00_fis",
+    "brille_00_klar",
+    "fit_00_verband",
+    "ath_20_clara",
+    "ski_20_pro",
+    "helm_20_wind",
+    "brille_20_foto",
+    "fit_20_studio"
+  ],
+  "run": {
+    "id": "8e81198f",
+    "mode": "cap",
+    "era": "2020er",
+    "seed": "3fb98b04756d",
+    "woche": null,
+    "status": "done",
+    "slot_index": 5,
+    "offers": [],
+    "rerolls": 2,
+    "reroll_zaehler": 5,
+    "cap": 95,
+    "budget": 1,
+    "team": {
+      "athlet": {
+        "id": "ath_20_clara",
+        "tier": "profi"
+      },
+      "ski": {
+        "id": "ski_20_pro",
+        "tier": "profi"
+      },
+      "helm": {
+        "id": "helm_20_wind",
+        "tier": "profi"
+      },
+      "brille": {
+        "id": "brille_20_foto",
+        "tier": "standard"
+      },
+      "fitness": {
+        "id": "fit_20_studio",
+        "tier": "standard"
+      }
+    },
+    "race_index": 10,
+    "results": [
+      {
+        "kurs": "levi",
+        "wetter": "neuschnee",
+        "zeit": 43.02,
+        "platz": 1,
+        "punkte": 100,
+        "geschwindigkeit": 13.75,
+        "grundzeit": 43.62,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.6
+          },
+          {
+            "name": "Kurve zu weit",
+            "diff": 0.6
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.6
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": 0.77,
+        "feld": [
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 43.02,
+            "du": true,
+            "platz": 1
+          },
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 43.79,
+            "platz": 2
+          },
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 44.38,
+            "platz": 3
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 44.94,
+            "platz": 4
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 45.34,
+            "platz": 5
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 45.84,
+            "platz": 6
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 45.99,
+            "platz": 7
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 46.49,
+            "platz": 8
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 46.7,
+            "platz": 9
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 46.76,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "soelden",
+        "wetter": "neuschnee",
+        "zeit": 59.98,
+        "platz": 2,
+        "punkte": 80,
+        "geschwindigkeit": 18.34,
+        "grundzeit": 59.98,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -0.57,
+        "feld": [
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 59.41,
+            "platz": 1
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 59.98,
+            "du": true,
+            "platz": 2
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 60.28,
+            "platz": 3
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 60.63,
+            "platz": 4
+          },
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 61.14,
+            "platz": 5
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 61.83,
+            "platz": 6
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 62.98,
+            "platz": 7
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 63.1,
+            "platz": 8
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 63.37,
+            "platz": 9
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 63.93,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "lake_louise",
+        "wetter": "sturm",
+        "zeit": 96.95,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 29.91,
+        "grundzeit": 96.95,
+        "ereignisse": [],
+        "abstand": -9.98,
+        "feld": [
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 86.97,
+            "platz": 1
+          },
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 89.44,
+            "platz": 2
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 90.9,
+            "platz": 3
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 91.19,
+            "platz": 4
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 91.4,
+            "platz": 5
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 91.62,
+            "platz": 6
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 93.2,
+            "platz": 7
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 93.21,
+            "platz": 8
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 93.54,
+            "platz": 9
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 96.95,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "val_gardena",
+        "wetter": "sturm",
+        "zeit": 73.62,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 26.16,
+        "grundzeit": 72.62,
+        "ereignisse": [
+          {
+            "name": "Kurve zu weit",
+            "diff": 1.0
+          },
+          {
+            "name": "Kurve zu weit",
+            "diff": 1.0
+          },
+          {
+            "name": "Perfekte Linie",
+            "diff": -1.0
+          }
+        ],
+        "abstand": -7.9,
+        "feld": [
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 65.72,
+            "platz": 1
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 66.71,
+            "platz": 2
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 66.89,
+            "platz": 3
+          },
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 67.32,
+            "platz": 4
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 68.32,
+            "platz": 5
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 68.52,
+            "platz": 6
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 68.59,
+            "platz": 7
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 68.81,
+            "platz": 8
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 69.59,
+            "platz": 9
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 73.62,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "adelboden",
+        "wetter": "nebel",
+        "zeit": 66.37,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 18.53,
+        "grundzeit": 64.77,
+        "ereignisse": [
+          {
+            "name": "Ausrutscher",
+            "diff": 1.6
+          }
+        ],
+        "abstand": -6.8,
+        "feld": [
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 59.57,
+            "platz": 1
+          },
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 61.53,
+            "platz": 2
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 62.34,
+            "platz": 3
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 62.44,
+            "platz": 4
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 62.45,
+            "platz": 5
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 62.84,
+            "platz": 6
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 64.01,
+            "platz": 7
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 64.03,
+            "platz": 8
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 66.34,
+            "platz": 9
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 66.37,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "wengen",
+        "wetter": "sonne",
+        "zeit": 112.32,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 35.61,
+        "grundzeit": 112.32,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -13.84,
+        "feld": [
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 98.48,
+            "platz": 1
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 99.33,
+            "platz": 2
+          },
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 101.94,
+            "platz": 3
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 103.39,
+            "platz": 4
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 104.09,
+            "platz": 5
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 104.54,
+            "platz": 6
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 104.93,
+            "platz": 7
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 105.93,
+            "platz": 8
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 106.4,
+            "platz": 9
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 112.32,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "kitzbuehel",
+        "wetter": "eis",
+        "zeit": 100.27,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 33.72,
+        "grundzeit": 97.87,
+        "ereignisse": [
+          {
+            "name": "Zu späte Kurve",
+            "diff": 2.4
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -13.34,
+        "feld": [
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 86.93,
+            "platz": 1
+          },
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 87.19,
+            "platz": 2
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 87.73,
+            "platz": 3
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 88.95,
+            "platz": 4
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 89.23,
+            "platz": 5
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 89.33,
+            "platz": 6
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 89.54,
+            "platz": 7
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 90.23,
+            "platz": 8
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 92.16,
+            "platz": 9
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 100.27,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "schladming",
+        "wetter": "sturm",
+        "zeit": 48.24,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 13.47,
+        "grundzeit": 48.24,
+        "ereignisse": [
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -6.72,
+        "feld": [
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 41.52,
+            "platz": 1
+          },
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 42.11,
+            "platz": 2
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 42.18,
+            "platz": 3
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 42.4,
+            "platz": 4
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 42.63,
+            "platz": 5
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 42.69,
+            "platz": 6
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 42.85,
+            "platz": 7
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 43.86,
+            "platz": 8
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 44.44,
+            "platz": 9
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 48.24,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "kvitfjell",
+        "wetter": "sonne",
+        "zeit": 70.45,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 28.39,
+        "grundzeit": 70.45,
+        "ereignisse": [],
+        "abstand": -10.87,
+        "feld": [
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 59.58,
+            "platz": 1
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 61.5,
+            "platz": 2
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 62.2,
+            "platz": 3
+          },
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 62.7,
+            "platz": 4
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 63.18,
+            "platz": 5
+          },
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 63.43,
+            "platz": 6
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 64.04,
+            "platz": 7
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 64.11,
+            "platz": 8
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 64.51,
+            "platz": 9
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 70.45,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      },
+      {
+        "kurs": "finale",
+        "wetter": "sonne",
+        "zeit": 64.58,
+        "platz": 10,
+        "punkte": 26,
+        "geschwindigkeit": 19.88,
+        "grundzeit": 65.38,
+        "ereignisse": [
+          {
+            "name": "Perfekte Linie",
+            "diff": -0.8
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          },
+          {
+            "name": "Kein Fehler",
+            "diff": 0.0
+          }
+        ],
+        "abstand": -9.43,
+        "feld": [
+          {
+            "name": "Mia Tanner",
+            "nation": "ITA",
+            "zeit": 55.15,
+            "platz": 1
+          },
+          {
+            "name": "Nils Novak",
+            "nation": "FRA",
+            "zeit": 57.12,
+            "platz": 2
+          },
+          {
+            "name": "Alex Dreyer",
+            "nation": "AUT",
+            "zeit": 57.4,
+            "platz": 3
+          },
+          {
+            "name": "Georg Planker",
+            "nation": "CRO",
+            "zeit": 57.66,
+            "platz": 4
+          },
+          {
+            "name": "Wolfgang Rainer",
+            "nation": "FRA",
+            "zeit": 58.25,
+            "platz": 5
+          },
+          {
+            "name": "Jan Hinterseer",
+            "nation": "SLO",
+            "zeit": 58.46,
+            "platz": 6
+          },
+          {
+            "name": "Mia Jörg",
+            "nation": "ITA",
+            "zeit": 59.23,
+            "platz": 7
+          },
+          {
+            "name": "Tobias Gasser",
+            "nation": "CRO",
+            "zeit": 59.58,
+            "platz": 8
+          },
+          {
+            "name": "Viktor Novak",
+            "nation": "SLO",
+            "zeit": 59.61,
+            "platz": 9
+          },
+          {
+            "name": "Spieler3",
+            "nation": null,
+            "zeit": 64.58,
+            "du": true,
+            "platz": 10
+          }
+        ]
+      }
+    ],
+    "mods": {
+      "fehler": -0.02,
+      "rivalen": 0.02,
+      "wetter": null
+    },
+    "mod_name": null,
+    "rivalen": [
+      {
+        "name": "Tobias Gasser",
+        "nation": "CRO",
+        "skill": -0.359
+      },
+      {
+        "name": "Jan Hinterseer",
+        "nation": "SLO",
+        "skill": -1.176
+      },
+      {
+        "name": "Mia Jörg",
+        "nation": "ITA",
+        "skill": -0.901
+      },
+      {
+        "name": "Nils Novak",
+        "nation": "FRA",
+        "skill": 0.646
+      },
+      {
+        "name": "Georg Planker",
+        "nation": "CRO",
+        "skill": 0.182
+      },
+      {
+        "name": "Alex Dreyer",
+        "nation": "AUT",
+        "skill": 0.61
+      },
+      {
+        "name": "Viktor Novak",
+        "nation": "SLO",
+        "skill": -0.097
+      },
+      {
+        "name": "Mia Tanner",
+        "nation": "ITA",
+        "skill": 1.182
+      },
+      {
+        "name": "Wolfgang Rainer",
+        "nation": "FRA",
+        "skill": -0.477
+      }
+    ],
+    "punkte": 388,
+    "siege": 1,
+    "podien": 2,
+    "serie": 0,
+    "beste_serie": 1,
+    "bonus": 0
+  }
+}
